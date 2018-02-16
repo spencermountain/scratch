@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+    html {
+      overflow: hidden;
+      height: 100%;
+    }
+    body{
+      overflow: auto;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      color:grey;
+      width:100%;
+      height:100%;
+      margin:0px;
+    }
+    svg {
+      border:1px solid grey;
+      overflow: visible;
+    }
+    </style>
+  </head>
+  <body>
+    <svg height="50%" width="50%" viewBox='0 0 100 100'>
+      <path id="path" d='' fill="steelblue"/>
+    </svg>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="./dayTimes.js"></script>
+    <script defer>
+      //make the path's d
+      const drawPath=(arr)=>{
+        const height = 100
+        const width = 100
+        var max_x = d3.max(arr.map(a=> a.x));
+        var max_y = d3.max(arr.map(a=> a.y));
+        var xScale = d3.scaleLinear().domain([0, max_x]).range([0, width]);
+        var yScale = d3.scaleLinear().domain([0, max_y]).range([height, 0])
+        let path = d3.area().x(d => xScale(d.x) ).y0(d => height).y1(d => yScale(d.y) ).curve(d3.curveMonotoneX)(arr);
+        return path
+      }
+      let arr=[
+        {x:3,y:3},
+        {x:5,y:32},
+        {x:8,y:32},
+        {x:10,y:32},
+        {x:40,y:62},
+        {x:50,y:72},
+        {x:60,y:74},
+        {x:70,y:34},
+        {x:74,y:32},
+        {x:80,y:32},
+        {x:90,y:22},
+        {x:100,y:2},
+      ]
+      var d=drawPath(arr)
+      document.getElementById('path').setAttribute('d',d)
+    </script>
+  </body>
+</html>

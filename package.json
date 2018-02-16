@@ -1,0 +1,23 @@
+{
+  "name": "scratch",
+  "version": "0.0.1",
+  "description": "not even trying",
+  "main": "./",
+  "scripts": {
+    "start": "browser-sync start --server --files './'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencermountain/scratch.git"
+  },
+  "author": "spencermountain@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spencermountain/scratch/issues"
+  },
+  "homepage": "https://github.com/spencermountain/scratch#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}

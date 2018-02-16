@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="../lib/index.css"/>
+		<link rel="stylesheet" href="../lib/tachyons.min.css"/>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script src="../lib/d3.v4.min.js"></script>
+    <script src="../lib/spacetime.min.js"></script>
+    <script src="./helper.js"></script>
+    <script src="./calendar.js"></script>
+    <script defer>
+		d3.csv("./data.csv", function(data) {
+			console.log(data);
+			let days=data.map((o) => {
+				return day(o['START DATE'])
+			})
+			let html=drawCalendar(days)
+			document.body.innerHTML=html
+		});
+    </script>
+  </body>
+</html>

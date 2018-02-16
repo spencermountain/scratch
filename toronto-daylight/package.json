@@ -1,0 +1,30 @@
+{
+  "name": "toronto-daylight",
+  "version": "0.0.1",
+  "description": "visualize toronto sunset patterns",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node ./scripts/watch.js",
+    "build": "node ./scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencermountain/toronto-daylight.git"
+  },
+  "author": "spencermountain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spencermountain/toronto-daylight/issues"
+  },
+  "homepage": "https://github.com/spencermountain/toronto-daylight#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "browser-sync": "^2.23.5",
+    "browserify": "^15.2.0",
+    "hyperapp": "^1.0.2",
+    "purify-css": "^1.2.5",
+    "tachyons": "^4.9.1",
+    "uglifyjs": "^2.4.11"
+  }
+}
