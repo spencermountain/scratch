@@ -1,0 +1,1 @@
+const aspects = require('./aspects');

@@ -1,0 +1,3146 @@
+{
+  "Dubai, UAE": [
+    25.25817,
+    55.30472
+  ],
+  "Sharjah, UAE": [
+    25.33737,
+    55.41206
+  ],
+  "Abu Dhabi, UAE": [
+    24.46667,
+    54.36667
+  ],
+  "Kabul, Afghanistan": [
+    34.52813,
+    69.17233
+  ],
+  "Yerevan, Armenia": [
+    40.18111,
+    44.51361
+  ],
+  "Luanda, Angola": [
+    -8.83682,
+    13.23432
+  ],
+  "Quilmes, Argentina": [
+    -34.72418,
+    -58.25265
+  ],
+  "Mar del Plata, Argentina": [
+    -38.00228,
+    -57.55754
+  ],
+  "La Plata, Argentina": [
+    -34.92145,
+    -57.95453
+  ],
+  "Buenos Aires, Argentina": [
+    -34.61315,
+    -58.37723
+  ],
+  "San Miguel de Tucumán, Argentina": [
+    -26.82414,
+    -65.2226
+  ],
+  "Salta, Argentina": [
+    -24.7859,
+    -65.41166
+  ],
+  "Rosario, Argentina": [
+    -32.94682,
+    -60.63932
+  ],
+  "Mendoza, Argentina": [
+    -32.89084,
+    -68.82717
+  ],
+  "Córdoba, Argentina": [
+    -31.4135,
+    -64.18105
+  ],
+  "Vienna, Austria": [
+    48.20849,
+    16.37208
+  ],
+  "Perth, Australia": [
+    -31.95224,
+    115.8614
+  ],
+  "Adelaide, Australia": [
+    -34.92866,
+    138.59863
+  ],
+  "Sydney, Australia": [
+    -33.86785,
+    151.20732
+  ],
+  "Melbourne, Australia": [
+    -37.814,
+    144.96332
+  ],
+  "Gold Coast, Australia": [
+    -28.00029,
+    153.43088
+  ],
+  "Brisbane, Australia": [
+    -27.46794,
+    153.02809
+  ],
+  "Baku, Azerbaijan": [
+    40.37767,
+    49.89201
+  ],
+  "Sarajevo, Bosnia and Herzegovina": [
+    43.84864,
+    18.35644
+  ],
+  "Rājshāhi, Bangladesh": [
+    24.374,
+    88.60114
+  ],
+  "Dhaka, Bangladesh": [
+    23.7104,
+    90.40744
+  ],
+  "Chittagong, Bangladesh": [
+    22.3384,
+    91.83168
+  ],
+  "Khulna, Bangladesh": [
+    22.80978,
+    89.56439
+  ],
+  "Brussels, Belgium": [
+    50.85045,
+    4.34878
+  ],
+  "Ouagadougou, Burkina Faso": [
+    12.36566,
+    -1.53388
+  ],
+  "Sofia, Bulgaria": [
+    42.69751,
+    23.32415
+  ],
+  "Cotonou, Benin": [
+    6.36536,
+    2.41833
+  ],
+  "Santa Cruz de la Sierra, Bolivia": [
+    -17.78629,
+    -63.18117
+  ],
+  "La Paz, Bolivia": [
+    -16.5,
+    -68.15
+  ],
+  "Cochabamba, Bolivia": [
+    -17.3895,
+    -66.1568
+  ],
+  "Teresina, Brazil": [
+    -5.08917,
+    -42.80194
+  ],
+  "São Luís, Brazil": [
+    -2.52972,
+    -44.30278
+  ],
+  "Recife, Brazil": [
+    -8.05389,
+    -34.88111
+  ],
+  "Natal, Brazil": [
+    -5.795,
+    -35.20944
+  ],
+  "Maceió, Brazil": [
+    -9.66583,
+    -35.73528
+  ],
+  "João Pessoa, Brazil": [
+    -7.115,
+    -34.86306
+  ],
+  "Jaboatão, Brazil": [
+    -8.18028,
+    -35.00139
+  ],
+  "Fortaleza, Brazil": [
+    -3.71722,
+    -38.54306
+  ],
+  "Belém, Brazil": [
+    -1.45583,
+    -48.50444
+  ],
+  "Uberlândia, Brazil": [
+    -18.91861,
+    -48.27722
+  ],
+  "Sorocaba, Brazil": [
+    -23.50167,
+    -47.45806
+  ],
+  "São Paulo, Brazil": [
+    -23.5475,
+    -46.63611
+  ],
+  "São José dos Campos, Brazil": [
+    -23.17944,
+    -45.88694
+  ],
+  "São Bernardo do Campo, Brazil": [
+    -23.69389,
+    -46.565
+  ],
+  "Santo André, Brazil": [
+    -23.66389,
+    -46.53833
+  ],
+  "Salvador, Brazil": [
+    -12.97111,
+    -38.51083
+  ],
+  "Rio de Janeiro, Brazil": [
+    -22.90278,
+    -43.2075
+  ],
+  "Ribeirão Preto, Brazil": [
+    -21.1775,
+    -47.81028
+  ],
+  "Porto Alegre, Brazil": [
+    -30.03306,
+    -51.23
+  ],
+  "Osasco, Brazil": [
+    -23.5325,
+    -46.79167
+  ],
+  "Nova Iguaçu, Brazil": [
+    -22.75917,
+    -43.45111
+  ],
+  "Guarulhos, Brazil": [
+    -23.46278,
+    -46.53333
+  ],
+  "Goiânia, Brazil": [
+    -16.67861,
+    -49.25389
+  ],
+  "Duque de Caxias, Brazil": [
+    -22.78556,
+    -43.31167
+  ],
+  "Curitiba, Brazil": [
+    -25.42778,
+    -49.27306
+  ],
+  "Cuiabá, Brazil": [
+    -15.59611,
+    -56.09667
+  ],
+  "Contagem, Brazil": [
+    -19.93167,
+    -44.05361
+  ],
+  "Campo Grande, Brazil": [
+    -20.44278,
+    -54.64639
+  ],
+  "Campinas, Brazil": [
+    -22.90556,
+    -47.06083
+  ],
+  "Brasília, Brazil": [
+    -15.77972,
+    -47.92972
+  ],
+  "Belo Horizonte, Brazil": [
+    -19.92083,
+    -43.93778
+  ],
+  "Manaus, Brazil": [
+    -3.10194,
+    -60.025
+  ],
+  "Aparecida de Goiânia, Brazil": [
+    -16.82333,
+    -49.24389
+  ],
+  "Jaboatão dos Guararapes, Brazil": [
+    -8.11278,
+    -35.01472
+  ],
+  "Minsk, Belarus": [
+    53.9,
+    27.56667
+  ],
+  "Calgary, Canada": [
+    51.05011,
+    -114.08529
+  ],
+  "Edmonton, Canada": [
+    53.55014,
+    -113.46871
+  ],
+  "Hamilton, Canada": [
+    43.25011,
+    -79.84963
+  ],
+  "Mississauga, Canada": [
+    43.5789,
+    -79.6583
+  ],
+  "Montréal, Canada": [
+    45.50884,
+    -73.58781
+  ],
+  "North York, Canada": [
+    43.76681,
+    -79.4163
+  ],
+  "Ottawa, Canada": [
+    45.41117,
+    -75.69812
+  ],
+  "Toronto, Canada": [
+    43.70011,
+    -79.4163
+  ],
+  "Vancouver, Canada": [
+    49.24966,
+    -123.11934
+  ],
+  "Winnipeg, Canada": [
+    49.8844,
+    -97.14704
+  ],
+  "Québec, Canada": [
+    46.81228,
+    -71.21454
+  ],
+  "Mbuji-Mayi, Congo": [
+    -6.13603,
+    23.58979
+  ],
+  "Kisangani, Congo": [
+    0.51528,
+    25.19099
+  ],
+  "Lubumbashi, Congo": [
+    -11.66089,
+    27.47938
+  ],
+  "Kinshasa, Congo": [
+    -4.32142,
+    15.30807
+  ],
+  "Bangui, Central African Republic": [
+    4.36122,
+    18.55496
+  ],
+  "Pointe-Noire, Congo": [
+    -4.77609,
+    11.86352
+  ],
+  "Brazzaville, Congo": [
+    -4.26613,
+    15.28318
+  ],
+  "Bouaké, Côte d'Ivoire": [
+    7.69385,
+    -5.03031
+  ],
+  "Abobo, Côte d'Ivoire": [
+    5.41613,
+    -4.0159
+  ],
+  "Abidjan, Côte d'Ivoire": [
+    5.30966,
+    -4.01266
+  ],
+  "Santiago, Chile": [
+    -33.45694,
+    -70.64827
+  ],
+  "Puente Alto, Chile": [
+    -33.61169,
+    -70.57577
+  ],
+  "Yaoundé, Cameroon": [
+    3.86667,
+    11.51667
+  ],
+  "Douala, Cameroon": [
+    4.04827,
+    9.70428
+  ],
+  "Ürümqi, China": [
+    43.80096,
+    87.60046
+  ],
+  "Shihezi, China": [
+    44.3023,
+    86.03694
+  ],
+  "Zigong, China": [
+    29.34162,
+    104.77689
+  ],
+  "Zhuzhou, China": [
+    27.83333,
+    113.15
+  ],
+  "Zhumadian, China": [
+    32.97944,
+    114.02944
+  ],
+  "Zhenjiang, China": [
+    32.21086,
+    119.45508
+  ],
+  "Zhengzhou, China": [
+    34.75778,
+    113.64861
+  ],
+  "Zhanjiang, China": [
+    21.28145,
+    110.34271
+  ],
+  "Zhangzhou, China": [
+    24.51333,
+    117.65556
+  ],
+  "Zibo, China": [
+    36.79056,
+    118.06333
+  ],
+  "Anyang, China": [
+    36.09944,
+    114.32889
+  ],
+  "Yunfu, China": [
+    22.92832,
+    112.03954
+  ],
+  "Yantai, China": [
+    37.47649,
+    121.44081
+  ],
+  "Yangzhou, China": [
+    32.39722,
+    119.43583
+  ],
+  "Yancheng, China": [
+    33.38556,
+    120.12528
+  ],
+  "Tongshan, China": [
+    34.18045,
+    117.15707
+  ],
+  "Xinyang, China": [
+    32.12278,
+    114.06556
+  ],
+  "Xinxiang, China": [
+    35.30889,
+    113.86722
+  ],
+  "Xining, China": [
+    36.62554,
+    101.75739
+  ],
+  "Xingtai, China": [
+    37.06306,
+    114.49417
+  ],
+  "Xianyang, China": [
+    34.33778,
+    108.70261
+  ],
+  "Zhuhai, China": [
+    22.27694,
+    113.56778
+  ],
+  "Xiangtan, China": [
+    27.85,
+    112.9
+  ],
+  "Xi’an, China": [
+    34.25833,
+    108.92861
+  ],
+  "Xiamen, China": [
+    24.47979,
+    118.08187
+  ],
+  "Wuxi, China": [
+    31.56887,
+    120.28857
+  ],
+  "Changde, China": [
+    29.04638,
+    111.6783
+  ],
+  "Wuhu, China": [
+    31.33728,
+    118.37351
+  ],
+  "Wuhan, China": [
+    30.58333,
+    114.26667
+  ],
+  "Wenzhou, China": [
+    27.99942,
+    120.66682
+  ],
+  "Tianshui, China": [
+    34.57952,
+    105.74238
+  ],
+  "Tianjin, China": [
+    39.14222,
+    117.17667
+  ],
+  "Tangshan, China": [
+    39.63333,
+    118.18333
+  ],
+  "Tanggu, China": [
+    39.02111,
+    117.64694
+  ],
+  "Taizhou, China": [
+    32.49069,
+    119.90812
+  ],
+  "Taiyuan, China": [
+    37.86944,
+    112.56028
+  ],
+  "Tai’an, China": [
+    36.18528,
+    117.12
+  ],
+  "Shiyan, China": [
+    32.6475,
+    110.77806
+  ],
+  "Shijiazhuang, China": [
+    38.04139,
+    114.47861
+  ],
+  "Shenzhen, China": [
+    22.54554,
+    114.0683
+  ],
+  "Shaoguan, China": [
+    24.8,
+    113.58333
+  ],
+  "Shantou, China": [
+    23.36814,
+    116.71479
+  ],
+  "Shanghai, China": [
+    31.22222,
+    121.45806
+  ],
+  "Jieyang, China": [
+    23.52886,
+    116.36416
+  ],
+  "Qinhuangdao, China": [
+    39.93167,
+    119.58833
+  ],
+  "Huai'an, China": [
+    33.58861,
+    119.01917
+  ],
+  "Qingdao, China": [
+    36.09861,
+    120.37194
+  ],
+  "Puyang, China": [
+    29.45679,
+    119.88872
+  ],
+  "Pingdingshan, China": [
+    33.73847,
+    113.30119
+  ],
+  "Ningbo, China": [
+    29.87819,
+    121.54945
+  ],
+  "Neijiang, China": [
+    29.58354,
+    105.06216
+  ],
+  "Nantong, China": [
+    32.03028,
+    120.87472
+  ],
+  "Nanning, China": [
+    22.81667,
+    108.31667
+  ],
+  "Nanjing, China": [
+    32.06167,
+    118.77778
+  ],
+  "Nanchong, China": [
+    30.79508,
+    106.08474
+  ],
+  "Nanchang, China": [
+    28.68333,
+    115.88333
+  ],
+  "Luoyang, China": [
+    34.68361,
+    112.45361
+  ],
+  "Luancheng, China": [
+    37.87917,
+    114.65167
+  ],
+  "Guankou, China": [
+    28.15861,
+    113.62709
+  ],
+  "Lanzhou, China": [
+    36.05701,
+    103.83987
+  ],
+  "Langfang, China": [
+    39.50972,
+    116.69472
+  ],
+  "Kunming, China": [
+    25.03889,
+    102.71833
+  ],
+  "Kaifeng, China": [
+    34.7986,
+    114.30742
+  ],
+  "Jinan, China": [
+    36.66833,
+    116.99722
+  ],
+  "Jiaozuo, China": [
+    35.23972,
+    113.23306
+  ],
+  "Jiangmen, China": [
+    22.58333,
+    113.08333
+  ],
+  "Huangshi, China": [
+    30.24706,
+    115.04814
+  ],
+  "Huainan, China": [
+    32.62639,
+    116.99694
+  ],
+  "Huaibei, China": [
+    33.97444,
+    116.79167
+  ],
+  "Hengyang, China": [
+    26.88806,
+    112.615
+  ],
+  "Hefei, China": [
+    31.86389,
+    117.28083
+  ],
+  "Hangzhou, China": [
+    30.29365,
+    120.16142
+  ],
+  "Handan, China": [
+    36.60056,
+    114.46778
+  ],
+  "Haikou, China": [
+    20.04583,
+    110.34167
+  ],
+  "Guli, China": [
+    28.88162,
+    120.03308
+  ],
+  "Guiyang, China": [
+    26.58333,
+    106.71667
+  ],
+  "Guilin, China": [
+    25.28194,
+    110.28639
+  ],
+  "Guangzhou, China": [
+    23.11667,
+    113.25
+  ],
+  "Fuzhou, China": [
+    26.06139,
+    119.30611
+  ],
+  "Foshan, China": [
+    23.02677,
+    113.13148
+  ],
+  "Dayan, China": [
+    26.86879,
+    100.22072
+  ],
+  "Dalian, China": [
+    38.91222,
+    121.60222
+  ],
+  "Chongqing, China": [
+    29.56278,
+    106.55278
+  ],
+  "Chengdu, China": [
+    30.66667,
+    104.06667
+  ],
+  "Changzhou, China": [
+    31.77358,
+    119.95401
+  ],
+  "Changzhi, China": [
+    35.20889,
+    111.73861
+  ],
+  "Changsha, China": [
+    28.19874,
+    112.97087
+  ],
+  "Cangzhou, China": [
+    38.31667,
+    116.86667
+  ],
+  "Bengbu, China": [
+    32.94083,
+    117.36083
+  ],
+  "Beijing, China": [
+    39.9075,
+    116.39723
+  ],
+  "Baoding, China": [
+    38.85111,
+    115.49028
+  ],
+  "Shangyu, China": [
+    30.01556,
+    120.87111
+  ],
+  "Suzhou, China": [
+    31.30408,
+    120.59538
+  ],
+  "Zhongshan, China": [
+    21.31992,
+    110.5723
+  ],
+  "Yueyang, China": [
+    29.37455,
+    113.09481
+  ],
+  "Zhangjiakou, China": [
+    40.81,
+    114.87944
+  ],
+  "Yingkou, China": [
+    40.66482,
+    122.22833
+  ],
+  "Siping, China": [
+    43.16333,
+    124.36861
+  ],
+  "Shuangyashan, China": [
+    46.63611,
+    131.15389
+  ],
+  "Shenyang, China": [
+    41.79222,
+    123.43278
+  ],
+  "Qiqihar, China": [
+    47.34088,
+    123.96045
+  ],
+  "Panshan, China": [
+    41.18806,
+    122.04944
+  ],
+  "Mudanjiang, China": [
+    44.58333,
+    129.6
+  ],
+  "Liaoyang, China": [
+    41.27194,
+    123.17306
+  ],
+  "Jinzhou, China": [
+    41.10778,
+    121.14167
+  ],
+  "Jilin, China": [
+    43.85083,
+    126.56028
+  ],
+  "Jiamusi, China": [
+    46.79927,
+    130.31633
+  ],
+  "Hohhot, China": [
+    40.81056,
+    111.65222
+  ],
+  "Hegang, China": [
+    47.35118,
+    130.30012
+  ],
+  "Harbin, China": [
+    45.75,
+    126.65
+  ],
+  "Fuxin, China": [
+    42.01556,
+    121.65889
+  ],
+  "Fushun, China": [
+    41.85583,
+    123.92333
+  ],
+  "Datong, China": [
+    40.09361,
+    113.29139
+  ],
+  "Dandong, China": [
+    40.12917,
+    124.39472
+  ],
+  "Changchun, China": [
+    43.88,
+    125.32278
+  ],
+  "Benxi, China": [
+    41.28861,
+    123.765
+  ],
+  "Baotou, China": [
+    40.65222,
+    109.82222
+  ],
+  "Anshan, China": [
+    41.12361,
+    122.99
+  ],
+  "Changshu City, China": [
+    31.64615,
+    120.74221
+  ],
+  "Zhu Cheng City, China": [
+    35.99502,
+    119.40259
+  ],
+  "Ordos, China": [
+    39.6086,
+    109.78157
+  ],
+  "Medellín, Colombia": [
+    6.25184,
+    -75.56359
+  ],
+  "Cúcuta, Colombia": [
+    7.89391,
+    -72.50782
+  ],
+  "Cartagena, Colombia": [
+    10.39972,
+    -75.51444
+  ],
+  "Cali, Colombia": [
+    3.43722,
+    -76.5225
+  ],
+  "Bucaramanga, Colombia": [
+    7.12539,
+    -73.1198
+  ],
+  "Bogotá, Colombia": [
+    4.60971,
+    -74.08175
+  ],
+  "Barranquilla, Colombia": [
+    10.96854,
+    -74.78132
+  ],
+  "Santiago de Cuba, Cuba": [
+    20.02472,
+    -75.82194
+  ],
+  "Havana, Cuba": [
+    23.13302,
+    -82.38304
+  ],
+  "Prague, Czech Republic": [
+    50.08804,
+    14.42076
+  ],
+  "Stuttgart, Germany": [
+    48.78232,
+    9.17702
+  ],
+  "München, Germany": [
+    48.13743,
+    11.57549
+  ],
+  "Leipzig, Germany": [
+    51.33962,
+    12.37129
+  ],
+  "Köln, Germany": [
+    50.93333,
+    6.95
+  ],
+  "Hannover, Germany": [
+    52.37052,
+    9.73322
+  ],
+  "Hamburg, Germany": [
+    53.57532,
+    10.01534
+  ],
+  "Frankfurt am Main, Germany": [
+    50.11552,
+    8.68417
+  ],
+  "Essen, Germany": [
+    51.45657,
+    7.01228
+  ],
+  "Düsseldorf, Germany": [
+    51.22172,
+    6.77616
+  ],
+  "Duisburg, Germany": [
+    51.43247,
+    6.76516
+  ],
+  "Dortmund, Germany": [
+    51.51494,
+    7.466
+  ],
+  "Bremen, Germany": [
+    53.07516,
+    8.80777
+  ],
+  "Berlin, Germany": [
+    52.52437,
+    13.41053
+  ],
+  "Djibouti, Djibouti": [
+    11.58901,
+    43.14503
+  ],
+  "Copenhagen, Denmark": [
+    55.67594,
+    12.56553
+  ],
+  "Santo Domingo, Dominican Republic": [
+    18.50012,
+    -69.98857
+  ],
+  "Santiago de los Caballeros, Dominican Republic": [
+    19.4517,
+    -70.69703
+  ],
+  "Santo Domingo Oeste, Dominican Republic": [
+    18.5,
+    -70
+  ],
+  "Boumerdas, Algeria": [
+    36.76639,
+    3.47717
+  ],
+  "Tébessa, Algeria": [
+    35.40417,
+    8.12417
+  ],
+  "Oran, Algeria": [
+    35.69111,
+    -0.64167
+  ],
+  "Algiers, Algeria": [
+    36.7525,
+    3.04197
+  ],
+  "Quito, Ecuador": [
+    -0.22985,
+    -78.52495
+  ],
+  "Guayaquil, Ecuador": [
+    -2.20584,
+    -79.90795
+  ],
+  "Port Said, Egypt": [
+    31.25654,
+    32.28412
+  ],
+  "Cairo, Egypt": [
+    30.06263,
+    31.24967
+  ],
+  "Al Jīzah, Egypt": [
+    30.00808,
+    31.21093
+  ],
+  "Alexandria, Egypt": [
+    31.21564,
+    29.95527
+  ],
+  "Asmara, Eritrea": [
+    15.33805,
+    38.93184
+  ],
+  "Valencia, Spain": [
+    39.46975,
+    -0.37739
+  ],
+  "Sevilla, Spain": [
+    37.38241,
+    -5.97613
+  ],
+  "Málaga, Spain": [
+    36.72016,
+    -4.42034
+  ],
+  "Zaragoza, Spain": [
+    41.65606,
+    -0.87734
+  ],
+  "Madrid, Spain": [
+    40.4165,
+    -3.70256
+  ],
+  "Barcelona, Spain": [
+    41.38879,
+    2.15899
+  ],
+  "Addis Ababa, Ethiopia": [
+    9.02497,
+    38.74689
+  ],
+  "Helsinki, Finland": [
+    60.16952,
+    24.93545
+  ],
+  "Paris, France": [
+    48.85341,
+    2.3488
+  ],
+  "Marseille, France": [
+    43.29695,
+    5.38107
+  ],
+  "Libreville, Gabon": [
+    0.39241,
+    9.45356
+  ],
+  "City of London, UK": [
+    51.51279,
+    -0.09184
+  ],
+  "London, UK": [
+    51.50853,
+    -0.12574
+  ],
+  "Glasgow, UK": [
+    55.86515,
+    -4.25763
+  ],
+  "Birmingham, UK": [
+    52.48142,
+    -1.89983
+  ],
+  "Tbilisi, Georgia": [
+    41.69411,
+    44.83368
+  ],
+  "Kumasi, Ghana": [
+    6.68848,
+    -1.62443
+  ],
+  "Accra, Ghana": [
+    5.55602,
+    -0.1969
+  ],
+  "Conakry, Guinea": [
+    9.53795,
+    -13.67729
+  ],
+  "Camayenne, Guinea": [
+    9.535,
+    -13.68778
+  ],
+  "Athens, Greece": [
+    37.97945,
+    23.71622
+  ],
+  "Guatemala City, Guatemala": [
+    14.64072,
+    -90.51327
+  ],
+  "Kowloon, Hong Kong": [
+    22.31667,
+    114.18333
+  ],
+  "Hong Kong, Hong Kong": [
+    22.28552,
+    114.15769
+  ],
+  "Tegucigalpa, Honduras": [
+    14.0818,
+    -87.20681
+  ],
+  "Zagreb, Croatia": [
+    45.81444,
+    15.97798
+  ],
+  "Zagreb - Centar, Croatia": [
+    45.81313,
+    15.97753
+  ],
+  "Port-au-Prince, Haiti": [
+    18.53917,
+    -72.335
+  ],
+  "Budapest, Hungary": [
+    47.49801,
+    19.03991
+  ],
+  "Medan, Indonesia": [
+    3.58333,
+    98.66667
+  ],
+  "Yogyakarta, Indonesia": [
+    -7.78278,
+    110.36083
+  ],
+  "Makassar, Indonesia": [
+    -5.14,
+    119.4221
+  ],
+  "Bandarlampung, Indonesia": [
+    -5.42544,
+    105.25803
+  ],
+  "Tangerang, Indonesia": [
+    -6.17806,
+    106.63
+  ],
+  "Surakarta, Indonesia": [
+    -7.55611,
+    110.83167
+  ],
+  "Surabaya, Indonesia": [
+    -7.24917,
+    112.75083
+  ],
+  "Situbondo, Indonesia": [
+    -7.70623,
+    114.00976
+  ],
+  "Semarang, Indonesia": [
+    -6.9932,
+    110.4203
+  ],
+  "Pekanbaru, Indonesia": [
+    0.53333,
+    101.45
+  ],
+  "Palembang, Indonesia": [
+    -2.91673,
+    104.7458
+  ],
+  "Padang, Indonesia": [
+    -0.94924,
+    100.35427
+  ],
+  "Malang, Indonesia": [
+    -7.9797,
+    112.6304
+  ],
+  "Jakarta, Indonesia": [
+    -6.21462,
+    106.84513
+  ],
+  "Depok, Indonesia": [
+    -6.4,
+    106.81861
+  ],
+  "Bogor, Indonesia": [
+    -6.59444,
+    106.78917
+  ],
+  "Bekasi, Indonesia": [
+    -6.2349,
+    106.9896
+  ],
+  "Banjarmasin, Indonesia": [
+    -3.31987,
+    114.59075
+  ],
+  "Bandung, Indonesia": [
+    -6.90389,
+    107.61861
+  ],
+  "Masjid Jamie Baitul Muttaqien, Indonesia": [
+    -6.36836,
+    107.9558
+  ],
+  "City of Balikpapan, Indonesia": [
+    -1.24204,
+    116.89419
+  ],
+  "South Tangerang, Indonesia": [
+    -6.28862,
+    106.71789
+  ],
+  "Dublin, Ireland": [
+    53.33306,
+    -6.24889
+  ],
+  "Jerusalem, Israel": [
+    31.76904,
+    35.21633
+  ],
+  "Warangal, India": [
+    18,
+    79.58333
+  ],
+  "Vishākhapatnam, India": [
+    17.69004,
+    83.20925
+  ],
+  "Vijayawāda, India": [
+    16.51928,
+    80.63049
+  ],
+  "Vārānasi, India": [
+    25.31668,
+    83.01042
+  ],
+  "Vadodara, India": [
+    22.2994,
+    73.20812
+  ],
+  "Ulhasnagar, India": [
+    19.21667,
+    73.15
+  ],
+  "Thiruvananthapuram, India": [
+    8.4855,
+    76.94924
+  ],
+  "Tiruchirappalli, India": [
+    10.8155,
+    78.69651
+  ],
+  "Thāne, India": [
+    19.19704,
+    72.96356
+  ],
+  "Teni, India": [
+    10.01531,
+    77.482
+  ],
+  "Sūrat, India": [
+    21.19594,
+    72.83023
+  ],
+  "Srinagar, India": [
+    34.08842,
+    74.80298
+  ],
+  "Solāpur, India": [
+    17.67152,
+    75.91044
+  ],
+  "Shiliguri, India": [
+    26.71004,
+    88.42851
+  ],
+  "Sāngli, India": [
+    16.85438,
+    74.56417
+  ],
+  "Salem, India": [
+    11.65116,
+    78.15867
+  ],
+  "Ranchi, India": [
+    23.34777,
+    85.33856
+  ],
+  "Rājkot, India": [
+    22.29161,
+    70.79322
+  ],
+  "Raipur, India": [
+    21.23333,
+    81.63333
+  ],
+  "Raigarh Fort, India": [
+    18.25,
+    73.43333
+  ],
+  "Pune, India": [
+    18.51957,
+    73.85535
+  ],
+  "Pimpri, India": [
+    18.62292,
+    73.80696
+  ],
+  "Patna, India": [
+    25.60222,
+    85.11936
+  ],
+  "Nāsik, India": [
+    19.98333,
+    73.8
+  ],
+  "Nanded, India": [
+    19.16023,
+    77.31497
+  ],
+  "Nāgpur, India": [
+    21.15,
+    79.1
+  ],
+  "Mysore, India": [
+    12.29791,
+    76.63925
+  ],
+  "Morādābād, India": [
+    28.83893,
+    78.77684
+  ],
+  "Meerut, India": [
+    28.97155,
+    77.71934
+  ],
+  "Madurai, India": [
+    9.91735,
+    78.11962
+  ],
+  "Chennai, India": [
+    13.08784,
+    80.27847
+  ],
+  "Ludhiāna, India": [
+    30.90015,
+    75.85229
+  ],
+  "Lucknow, India": [
+    26.83928,
+    80.92313
+  ],
+  "Kota, India": [
+    25.18254,
+    75.83906
+  ],
+  "Kolhāpur, India": [
+    16.69563,
+    74.23167
+  ],
+  "Karol Bāgh, India": [
+    28.65156,
+    77.18858
+  ],
+  "Kānpur, India": [
+    26.4478,
+    80.34627
+  ],
+  "Kalyān, India": [
+    19.2437,
+    73.13554
+  ],
+  "Jalandhar, India": [
+    31.32556,
+    75.57917
+  ],
+  "Jodhpur, India": [
+    26.26841,
+    73.00594
+  ],
+  "Jamshedpur, India": [
+    22.80278,
+    86.18545
+  ],
+  "Jaipur, India": [
+    26.91962,
+    75.78781
+  ],
+  "Jabalpur, India": [
+    23.16697,
+    79.95006
+  ],
+  "Indore, India": [
+    22.71792,
+    75.8333
+  ],
+  "Hyderabad, India": [
+    17.38405,
+    78.45636
+  ],
+  "Hubli, India": [
+    15.34776,
+    75.13378
+  ],
+  "Hāora, India": [
+    22.57688,
+    88.31857
+  ],
+  "Gwalior, India": [
+    26.22982,
+    78.17337
+  ],
+  "Guntūr, India": [
+    16.29974,
+    80.45729
+  ],
+  "Gorakhpur, India": [
+    26.75479,
+    83.37235
+  ],
+  "Ghāziābād, India": [
+    28.66249,
+    77.43777
+  ],
+  "Guwāhāti, India": [
+    26.18617,
+    91.75095
+  ],
+  "Farīdābād, India": [
+    28.41252,
+    77.31977
+  ],
+  "Durgāpur, India": [
+    23.49956,
+    87.32155
+  ],
+  "Dombivli, India": [
+    19.21667,
+    73.08333
+  ],
+  "Delhi, India": [
+    28.65381,
+    77.22897
+  ],
+  "Dehradun, India": [
+    30.32443,
+    78.03392
+  ],
+  "Cuttack, India": [
+    20.46497,
+    85.87927
+  ],
+  "Coimbatore, India": [
+    11.00555,
+    76.96612
+  ],
+  "Cochin, India": [
+    9.93988,
+    76.26022
+  ],
+  "Chandigarh, India": [
+    30.73629,
+    76.7884
+  ],
+  "Kolkata, India": [
+    22.56263,
+    88.36304
+  ],
+  "Borivli, India": [
+    19.23496,
+    72.85976
+  ],
+  "Mumbai, India": [
+    19.07283,
+    72.88261
+  ],
+  "Bilimora, India": [
+    20.76957,
+    72.96134
+  ],
+  "Bīkāner, India": [
+    28.02094,
+    73.30749
+  ],
+  "Bhubaneshwar, India": [
+    20.27241,
+    85.83385
+  ],
+  "Bhopal, India": [
+    23.25469,
+    77.40289
+  ],
+  "Bhiwandi, India": [
+    19.30023,
+    73.05881
+  ],
+  "Bhilai, India": [
+    21.21667,
+    81.43333
+  ],
+  "Bhayandar, India": [
+    19.30157,
+    72.85107
+  ],
+  "Bhāvnagar, India": [
+    21.77446,
+    72.1525
+  ],
+  "Bareilly, India": [
+    28.34702,
+    79.42193
+  ],
+  "Bangalore, India": [
+    12.97194,
+    77.59369
+  ],
+  "Aurangābād, India": [
+    19.88333,
+    75.33333
+  ],
+  "Āsansol, India": [
+    23.68333,
+    86.98333
+  ],
+  "Amritsar, India": [
+    31.63661,
+    74.87476
+  ],
+  "Amrāvati, India": [
+    20.93333,
+    77.75
+  ],
+  "Allahābād, India": [
+    25.44894,
+    81.83328
+  ],
+  "Alīgarh, India": [
+    27.88334,
+    78.07475
+  ],
+  "Ajmer, India": [
+    26.44976,
+    74.64116
+  ],
+  "Ahmedabad, India": [
+    23.02579,
+    72.58726
+  ],
+  "Āgra, India": [
+    27.18333,
+    78.01667
+  ],
+  "Navi Mumbai, India": [
+    19.03681,
+    73.01582
+  ],
+  "Shivaji Nagar, India": [
+    18.53017,
+    73.85263
+  ],
+  "Kirkuk, Iraq": [
+    35.46806,
+    44.39222
+  ],
+  "Erbil, Iraq": [
+    36.19257,
+    44.01062
+  ],
+  "Baghdad, Iraq": [
+    33.34058,
+    44.40088
+  ],
+  "As Sulaymānīyah, Iraq": [
+    35.56496,
+    45.4329
+  ],
+  "Al Mawşil al Jadīdah, Iraq": [
+    36.33091,
+    43.09065
+  ],
+  "Mosul, Iraq": [
+    36.335,
+    43.11889
+  ],
+  "Al Başrah, Iraq": [
+    30.53302,
+    47.79747
+  ],
+  "Abū Ghurayb, Iraq": [
+    33.30703,
+    44.18694
+  ],
+  "Al Başrat al Qadīmah, Iraq": [
+    30.49528,
+    47.8169
+  ],
+  "Āzādshahr, Iran": [
+    34.79049,
+    48.57011
+  ],
+  "Kahrīz, Iran": [
+    34.3838,
+    47.0553
+  ],
+  "Tehrān, Iran": [
+    35.69439,
+    51.42151
+  ],
+  "Tabrīz, Iran": [
+    38.08,
+    46.2919
+  ],
+  "Shīrāz, Iran": [
+    29.61031,
+    52.53114
+  ],
+  "Rasht, Iran": [
+    37.28077,
+    49.58319
+  ],
+  "Qom, Iran": [
+    34.6401,
+    50.8764
+  ],
+  "Orūmīyeh, Iran": [
+    37.55274,
+    45.07605
+  ],
+  "Mashhad, Iran": [
+    36.31559,
+    59.56796
+  ],
+  "Kermānshāh, Iran": [
+    34.31417,
+    47.065
+  ],
+  "Kermān, Iran": [
+    30.28321,
+    57.07879
+  ],
+  "Karaj, Iran": [
+    35.83266,
+    50.99154
+  ],
+  "Hamadān, Iran": [
+    34.79922,
+    48.51456
+  ],
+  "Arāk, Iran": [
+    34.09174,
+    49.68916
+  ],
+  "Ahvaz, Iran": [
+    31.31901,
+    48.6842
+  ],
+  "Eşfahān, Iran": [
+    32.65722,
+    51.67761
+  ],
+  "Zahedan, Iran": [
+    29.4963,
+    60.8629
+  ],
+  "Palermo, Italy": [
+    38.11582,
+    13.35976
+  ],
+  "Turin, Italy": [
+    45.07049,
+    7.68682
+  ],
+  "Rome, Italy": [
+    41.89474,
+    12.4839
+  ],
+  "Napoli, Italy": [
+    40.83333,
+    14.25
+  ],
+  "Milano, Italy": [
+    45.46427,
+    9.18951
+  ],
+  "Genova, Italy": [
+    44.40632,
+    8.93386
+  ],
+  "Kingston, Jamaica": [
+    17.99702,
+    -76.79358
+  ],
+  "Zarqa, Jordan": [
+    32.07275,
+    36.08796
+  ],
+  "Amman, Jordan": [
+    31.95522,
+    35.94503
+  ],
+  "Yono, Japan": [
+    35.88333,
+    139.63333
+  ],
+  "Yokohama-shi, Japan": [
+    35.44778,
+    139.6425
+  ],
+  "Tokyo, Japan": [
+    35.6895,
+    139.69171
+  ],
+  "Shizuoka-shi, Japan": [
+    34.97694,
+    138.38306
+  ],
+  "Sakai, Japan": [
+    34.58333,
+    135.46667
+  ],
+  "Sagamihara, Japan": [
+    35.55306,
+    139.35444
+  ],
+  "Ōsaka-shi, Japan": [
+    34.69374,
+    135.50218
+  ],
+  "Okayama-shi, Japan": [
+    34.66167,
+    133.935
+  ],
+  "Niigata-shi, Japan": [
+    37.90222,
+    139.02361
+  ],
+  "Nerima-ku, Japan": [
+    35.73333,
+    139.65
+  ],
+  "Nagoya-shi, Japan": [
+    35.18147,
+    136.90641
+  ],
+  "Kyoto, Japan": [
+    35.02107,
+    135.75385
+  ],
+  "Kumamoto-shi, Japan": [
+    32.78972,
+    130.74167
+  ],
+  "Kōbe-shi, Japan": [
+    34.6913,
+    135.183
+  ],
+  "Kitakyūshū, Japan": [
+    33.83333,
+    130.83333
+  ],
+  "Kawasaki, Japan": [
+    35.52056,
+    139.71722
+  ],
+  "Kagoshima-shi, Japan": [
+    31.56018,
+    130.55814
+  ],
+  "Hiroshima-shi, Japan": [
+    34.39627,
+    132.45937
+  ],
+  "Hamamatsu, Japan": [
+    34.7,
+    137.73333
+  ],
+  "Hachiōji, Japan": [
+    35.65583,
+    139.32389
+  ],
+  "Funabashi, Japan": [
+    35.69306,
+    139.98333
+  ],
+  "Fukuoka-shi, Japan": [
+    33.60639,
+    130.41806
+  ],
+  "Sendai-shi, Japan": [
+    38.26889,
+    140.87194
+  ],
+  "Chiba, Japan": [
+    35.60472,
+    140.12333
+  ],
+  "Sapporo, Japan": [
+    43.06417,
+    141.34694
+  ],
+  "Edogawa-ku, Japan": [
+    35.7,
+    139.88333
+  ],
+  "Saitama, Japan": [
+    35.90807,
+    139.65657
+  ],
+  "Adachi-ku, Japan": [
+    35.7788,
+    139.79509
+  ],
+  "Itabashi-ku, Japan": [
+    35.75118,
+    139.70927
+  ],
+  "Ōta-ku, Japan": [
+    35.56126,
+    139.71605
+  ],
+  "Suginami-ku, Japan": [
+    35.69957,
+    139.63644
+  ],
+  "Sendai, Japan": [
+    38.25759,
+    140.8667
+  ],
+  "Nairobi, Kenya": [
+    -1.28333,
+    36.81667
+  ],
+  "Mombasa, Kenya": [
+    -4.05466,
+    39.66359
+  ],
+  "Bishkek, Kyrgyzstan": [
+    42.87,
+    74.59
+  ],
+  "Phnom Penh, Cambodia": [
+    11.56245,
+    104.91601
+  ],
+  "Takeo, Cambodia": [
+    10.99081,
+    104.78498
+  ],
+  "Pyongyang, North Korea": [
+    39.03385,
+    125.75432
+  ],
+  "Hamhŭng, North Korea": [
+    39.91833,
+    127.53639
+  ],
+  "Ulsan, South Korea": [
+    35.53722,
+    129.31667
+  ],
+  "Daejeon, South Korea": [
+    36.32139,
+    127.41972
+  ],
+  "Daegu, South Korea": [
+    35.87028,
+    128.59111
+  ],
+  "Suigen, South Korea": [
+    37.29111,
+    127.00889
+  ],
+  "Seoul, South Korea": [
+    37.56826,
+    126.97783
+  ],
+  "Busan, South Korea": [
+    35.10278,
+    129.04028
+  ],
+  "Bucheon, South Korea": [
+    37.49889,
+    126.78306
+  ],
+  "Gwangju, South Korea": [
+    35.15472,
+    126.91556
+  ],
+  "Goyang, South Korea": [
+    37.65639,
+    126.835
+  ],
+  "Incheon, South Korea": [
+    37.45361,
+    126.73167
+  ],
+  "Jeonju, South Korea": [
+    35.82194,
+    127.14889
+  ],
+  "Cheongju, South Korea": [
+    36.63722,
+    127.48972
+  ],
+  "Changwon, South Korea": [
+    35.22806,
+    128.68111
+  ],
+  "Anyang, South Korea": [
+    37.3925,
+    126.92694
+  ],
+  "Ansan, South Korea": [
+    37.32361,
+    126.82194
+  ],
+  "Seongnam, South Korea": [
+    37.43861,
+    127.13778
+  ],
+  "Al Aḩmadī, Kuwait": [
+    29.07694,
+    48.08389
+  ],
+  "Almaty, Kazakhstan": [
+    43.25654,
+    76.92848
+  ],
+  "Ra’s Bayrūt, Lebanon": [
+    33.9,
+    35.48333
+  ],
+  "Beirut, Lebanon": [
+    33.88894,
+    35.49442
+  ],
+  "Colombo, Sri Lanka": [
+    6.93194,
+    79.84778
+  ],
+  "Monrovia, Liberia": [
+    6.30054,
+    -10.7969
+  ],
+  "Vilnius, Lithuania": [
+    54.68916,
+    25.2798
+  ],
+  "Riga, Latvia": [
+    56.946,
+    24.10589
+  ],
+  "Benghazi, Libya": [
+    32.11766,
+    20.12928
+  ],
+  "Tripoli, Libya": [
+    32.87519,
+    13.18746
+  ],
+  "Tangier, Morocco": [
+    35.76727,
+    -5.79975
+  ],
+  "Sale, Morocco": [
+    34.0531,
+    -6.79846
+  ],
+  "Rabat, Morocco": [
+    34.01325,
+    -6.83255
+  ],
+  "Meknès, Morocco": [
+    33.89352,
+    -5.54727
+  ],
+  "Marrakesh, Morocco": [
+    31.63416,
+    -7.99994
+  ],
+  "Fès, Morocco": [
+    34.03715,
+    -4.9998
+  ],
+  "Casablanca, Morocco": [
+    33.58831,
+    -7.61138
+  ],
+  "Agadir, Morocco": [
+    30.42018,
+    -9.59815
+  ],
+  "Chişinău, Moldova": [
+    47.00556,
+    28.8575
+  ],
+  "Antananarivo, Madagascar": [
+    -18.91368,
+    47.53613
+  ],
+  "Bamako, Mali": [
+    12.65,
+    -8
+  ],
+  "Rangoon, Myanmar": [
+    16.80528,
+    96.15611
+  ],
+  "Mandalay, Myanmar": [
+    21.97473,
+    96.08359
+  ],
+  "Nay Pyi Taw, Myanmar": [
+    19.745,
+    96.12972
+  ],
+  "Ulaanbaatar, Mongolia": [
+    47.90771,
+    106.88324
+  ],
+  "Macau, Macao": [
+    22.20056,
+    113.54611
+  ],
+  "Nouakchott, Mauritania": [
+    18.08581,
+    -15.9785
+  ],
+  "Lilongwe, Malawi": [
+    -13.96692,
+    33.78725
+  ],
+  "Blantyre, Malawi": [
+    -15.78499,
+    35.00854
+  ],
+  "Gustavo A. Madero, Mexico": [
+    19.49016,
+    -99.10978
+  ],
+  "Alvaro Obregón, Mexico": [
+    19.35867,
+    -99.20329
+  ],
+  "Veracruz, Mexico": [
+    19.18074,
+    -96.13405
+  ],
+  "Toluca de Lerdo, Mexico": [
+    19.28786,
+    -99.65324
+  ],
+  "Tlalpan, Mexico": [
+    19.29708,
+    -99.16787
+  ],
+  "Tlalnepantla, Mexico": [
+    19.54005,
+    -99.19538
+  ],
+  "Santa María Chimalhuacán, Mexico": [
+    19.42155,
+    -98.95038
+  ],
+  "Puebla de Zaragoza, Mexico": [
+    19.04334,
+    -98.20193
+  ],
+  "Naucalpan de Juárez, Mexico": [
+    19.47851,
+    -99.23963
+  ],
+  "Mérida, Mexico": [
+    20.9767,
+    -89.62059
+  ],
+  "Iztapalapa, Mexico": [
+    19.35738,
+    -99.0671
+  ],
+  "Ecatepec, Mexico": [
+    19.61725,
+    -99.06601
+  ],
+  "Coyoacán, Mexico": [
+    19.3467,
+    -99.16174
+  ],
+  "Ciudad Nezahualcóyotl, Mexico": [
+    19.40061,
+    -99.01483
+  ],
+  "Mexico City, Mexico": [
+    19.42847,
+    -99.12766
+  ],
+  "Cancún, Mexico": [
+    21.17429,
+    -86.84656
+  ],
+  "Ciudad López Mateos, Mexico": [
+    19.58547,
+    -99.26034
+  ],
+  "Acapulco, Mexico": [
+    16.86336,
+    -99.8901
+  ],
+  "Cuauhtémoc, Mexico": [
+    19.44506,
+    -99.14612
+  ],
+  "Zapopan, Mexico": [
+    20.72356,
+    -103.38479
+  ],
+  "Torreón, Mexico": [
+    25.54333,
+    -103.4176
+  ],
+  "Tijuana, Mexico": [
+    32.5027,
+    -117.00371
+  ],
+  "San Luis Potosí, Mexico": [
+    22.14993,
+    -100.9828
+  ],
+  "Saltillo, Mexico": [
+    25.41942,
+    -101.00128
+  ],
+  "Santiago de Querétaro, Mexico": [
+    20.58806,
+    -100.38806
+  ],
+  "Morelia, Mexico": [
+    19.70078,
+    -101.18443
+  ],
+  "Monterrey, Mexico": [
+    25.67506,
+    -100.31846
+  ],
+  "Mexicali, Mexico": [
+    32.65002,
+    -115.46107
+  ],
+  "León, Mexico": [
+    21.12131,
+    -101.66801
+  ],
+  "Hermosillo, Mexico": [
+    29.0971,
+    -110.95749
+  ],
+  "Guadalupe, Mexico": [
+    25.67678,
+    -100.25646
+  ],
+  "Guadalajara, Mexico": [
+    20.66682,
+    -103.39182
+  ],
+  "Culiacán, Mexico": [
+    24.80737,
+    -107.39734
+  ],
+  "Ciudad Juárez, Mexico": [
+    31.73333,
+    -106.48333
+  ],
+  "Chihuahua, Mexico": [
+    28.63528,
+    -106.08889
+  ],
+  "Aguascalientes, Mexico": [
+    21.88234,
+    -102.28259
+  ],
+  "Johor Bahru, Malaysia": [
+    1.4655,
+    103.7578
+  ],
+  "Klang, Malaysia": [
+    3.03333,
+    101.45
+  ],
+  "Ipoh, Malaysia": [
+    4.5841,
+    101.0829
+  ],
+  "Petaling Jaya, Malaysia": [
+    3.10726,
+    101.60671
+  ],
+  "Kuala Lumpur, Malaysia": [
+    3.1412,
+    101.68653
+  ],
+  "Kuching, Malaysia": [
+    1.55,
+    110.33333
+  ],
+  "Kota Bharu, Malaysia": [
+    6.13328,
+    102.2386
+  ],
+  "Kampung Baru Subang, Malaysia": [
+    3.15,
+    101.53333
+  ],
+  "Subang Jaya, Malaysia": [
+    3.04384,
+    101.58062
+  ],
+  "Matola, Mozambique": [
+    -25.96222,
+    32.45889
+  ],
+  "Maputo, Mozambique": [
+    -25.96553,
+    32.58322
+  ],
+  "Beira, Mozambique": [
+    -19.84361,
+    34.83889
+  ],
+  "Niamey, Niger": [
+    13.51366,
+    2.1098
+  ],
+  "Zaria, Nigeria": [
+    11.11128,
+    7.7227
+  ],
+  "Warri, Nigeria": [
+    5.51667,
+    5.75
+  ],
+  "Sokoto, Nigeria": [
+    13.06092,
+    5.23902
+  ],
+  "Port Harcourt, Nigeria": [
+    4.77742,
+    7.0134
+  ],
+  "Oyo, Nigeria": [
+    7.85,
+    3.93333
+  ],
+  "Onitsha, Nigeria": [
+    6.14543,
+    6.78845
+  ],
+  "Maiduguri, Nigeria": [
+    11.84644,
+    13.16027
+  ],
+  "Lagos, Nigeria": [
+    6.45306,
+    3.39583
+  ],
+  "Kano, Nigeria": [
+    12.00012,
+    8.51672
+  ],
+  "Kaduna, Nigeria": [
+    10.52224,
+    7.43828
+  ],
+  "Jos, Nigeria": [
+    9.91667,
+    8.9
+  ],
+  "Ilorin, Nigeria": [
+    8.5,
+    4.55
+  ],
+  "Ibadan, Nigeria": [
+    7.38778,
+    3.89639
+  ],
+  "Enugu, Nigeria": [
+    6.4402,
+    7.4943
+  ],
+  "Ebute Ikorodu, Nigeria": [
+    6.60086,
+    3.48818
+  ],
+  "Benin City, Nigeria": [
+    6.33504,
+    5.62749
+  ],
+  "Abuja, Nigeria": [
+    9.05785,
+    7.49508
+  ],
+  "Abeokuta, Nigeria": [
+    7.15,
+    3.35
+  ],
+  "Aba, Nigeria": [
+    5.10658,
+    7.36667
+  ],
+  "Managua, Nicaragua": [
+    12.13282,
+    -86.2504
+  ],
+  "Rotterdam, Netherlands": [
+    51.9225,
+    4.47917
+  ],
+  "Amsterdam, Netherlands": [
+    52.37403,
+    4.88969
+  ],
+  "Oslo, Norway": [
+    59.91273,
+    10.74609
+  ],
+  "Kathmandu, Nepal": [
+    27.70169,
+    85.3206
+  ],
+  "Muscat, Oman": [
+    23.61387,
+    58.5922
+  ],
+  "Trujillo, Peru": [
+    -8.11599,
+    -79.02998
+  ],
+  "Chiclayo, Peru": [
+    -6.77137,
+    -79.84088
+  ],
+  "Lima, Peru": [
+    -12.04318,
+    -77.02824
+  ],
+  "Callao, Peru": [
+    -12.05658,
+    -77.11814
+  ],
+  "Arequipa, Peru": [
+    -16.39889,
+    -71.535
+  ],
+  "Taguig, Philippines": [
+    14.5243,
+    121.0792
+  ],
+  "Quezon City, Philippines": [
+    14.6488,
+    121.0509
+  ],
+  "Manila, Philippines": [
+    14.6042,
+    120.9822
+  ],
+  "Makati City, Philippines": [
+    14.55027,
+    121.03269
+  ],
+  "General Santos, Philippines": [
+    6.11278,
+    125.17167
+  ],
+  "Davao, Philippines": [
+    7.07306,
+    125.61278
+  ],
+  "Cebu City, Philippines": [
+    10.31672,
+    123.89071
+  ],
+  "Budta, Philippines": [
+    7.20417,
+    124.43972
+  ],
+  "Antipolo, Philippines": [
+    14.58639,
+    121.17528
+  ],
+  "Malingao, Philippines": [
+    7.16083,
+    124.475
+  ],
+  "Pasig City, Philippines": [
+    14.58691,
+    121.0614
+  ],
+  "Sargodha, Pakistan": [
+    32.08361,
+    72.67111
+  ],
+  "Rāwalpindi, Pakistan": [
+    33.6007,
+    73.0679
+  ],
+  "Quetta, Pakistan": [
+    30.199,
+    67.00971
+  ],
+  "Peshāwar, Pakistan": [
+    34.008,
+    71.57849
+  ],
+  "Muzaffarābād, Pakistan": [
+    34.37002,
+    73.47082
+  ],
+  "Multān, Pakistan": [
+    30.19556,
+    71.47528
+  ],
+  "Lahore, Pakistan": [
+    31.54972,
+    74.34361
+  ],
+  "Kotli, Pakistan": [
+    33.51667,
+    73.91667
+  ],
+  "Karachi, Pakistan": [
+    24.9056,
+    67.0822
+  ],
+  "Islamabad, Pakistan": [
+    33.72148,
+    73.04329
+  ],
+  "Hyderābād, Pakistan": [
+    25.39242,
+    68.37366
+  ],
+  "Gujrānwāla, Pakistan": [
+    32.16167,
+    74.18831
+  ],
+  "Faisalābād, Pakistan": [
+    31.41667,
+    73.08333
+  ],
+  "Bahāwalpur, Pakistan": [
+    29.4,
+    71.68333
+  ],
+  "Warsaw, Poland": [
+    52.22977,
+    21.01178
+  ],
+  "Wrocław, Poland": [
+    51.1,
+    17.03333
+  ],
+  "Poznań, Poland": [
+    52.40692,
+    16.92993
+  ],
+  "Łódź, Poland": [
+    51.75,
+    19.46667
+  ],
+  "Kraków, Poland": [
+    50.06143,
+    19.93658
+  ],
+  "Lisbon, Portugal": [
+    38.71667,
+    -9.13333
+  ],
+  "Asunción, Paraguay": [
+    -25.30066,
+    -57.63591
+  ],
+  "Bucharest, Romania": [
+    44.43225,
+    26.10626
+  ],
+  "Belgrade, Serbia": [
+    44.80401,
+    20.46513
+  ],
+  "Yaroslavl, Russia": [
+    57.62987,
+    39.87368
+  ],
+  "Voronezh, Russia": [
+    51.67204,
+    39.1843
+  ],
+  "Volgograd, Russia": [
+    48.71939,
+    44.50184
+  ],
+  "Ulyanovsk, Russia": [
+    54.32824,
+    48.38657
+  ],
+  "Ufa, Russia": [
+    54.78517,
+    56.04562
+  ],
+  "Tol’yatti, Russia": [
+    53.5303,
+    49.3461
+  ],
+  "Saratov, Russia": [
+    51.54056,
+    46.00861
+  ],
+  "Saint Petersburg, Russia": [
+    59.93863,
+    30.31413
+  ],
+  "Samara, Russia": [
+    53.20006,
+    50.15
+  ],
+  "Ryazan’, Russia": [
+    54.6269,
+    39.6916
+  ],
+  "Rostov-na-Donu, Russia": [
+    47.23135,
+    39.72328
+  ],
+  "Perm’, Russia": [
+    58.01741,
+    56.28552
+  ],
+  "Penza, Russia": [
+    53.20066,
+    45.00464
+  ],
+  "Orenburg, Russia": [
+    51.7727,
+    55.0988
+  ],
+  "Nizhniy Novgorod, Russia": [
+    56.32867,
+    44.00205
+  ],
+  "Naberezhnyye Chelny, Russia": [
+    55.72545,
+    52.41122
+  ],
+  "Moscow, Russia": [
+    55.75222,
+    37.61556
+  ],
+  "Lipetsk, Russia": [
+    52.60311,
+    39.57076
+  ],
+  "Krasnodar, Russia": [
+    45.04484,
+    38.97603
+  ],
+  "Kazan, Russia": [
+    55.78874,
+    49.12214
+  ],
+  "Izhevsk, Russia": [
+    56.84976,
+    53.20448
+  ],
+  "Astrakhan’, Russia": [
+    46.34968,
+    48.04076
+  ],
+  "Yekaterinburg, Russia": [
+    56.8519,
+    60.6122
+  ],
+  "Tyumen, Russia": [
+    57.15222,
+    65.52722
+  ],
+  "Omsk, Russia": [
+    54.99244,
+    73.36859
+  ],
+  "Novosibirsk, Russia": [
+    55.0415,
+    82.9346
+  ],
+  "Novokuznetsk, Russia": [
+    53.7557,
+    87.1099
+  ],
+  "Krasnoyarsk, Russia": [
+    56.01839,
+    92.86717
+  ],
+  "Chelyabinsk, Russia": [
+    55.15402,
+    61.42915
+  ],
+  "Barnaul, Russia": [
+    53.36056,
+    83.76361
+  ],
+  "Vladivostok, Russia": [
+    43.10562,
+    131.87353
+  ],
+  "Khabarovsk, Russia": [
+    48.48272,
+    135.08379
+  ],
+  "Irkutsk, Russia": [
+    52.29778,
+    104.29639
+  ],
+  "Khabarovsk Vtoroy, Russia": [
+    48.43776,
+    135.13328
+  ],
+  "Kalininskiy, Russia": [
+    59.99675,
+    30.3899
+  ],
+  "Kigali, Rwanda": [
+    -1.94995,
+    30.05885
+  ],
+  "Sulţānah, Saudi Arabia": [
+    24.49258,
+    39.58572
+  ],
+  "Mecca, Saudi Arabia": [
+    21.42667,
+    39.82611
+  ],
+  "Jeddah, Saudi Arabia": [
+    21.51694,
+    39.21917
+  ],
+  "Ta’if, Saudi Arabia": [
+    21.27028,
+    40.41583
+  ],
+  "Riyadh, Saudi Arabia": [
+    24.68773,
+    46.72185
+  ],
+  "Medina, Saudi Arabia": [
+    24.46861,
+    39.61417
+  ],
+  "Dammam, Saudi Arabia": [
+    26.43442,
+    50.10326
+  ],
+  "Omdurman, Sudan": [
+    15.64453,
+    32.47773
+  ],
+  "Khartoum, Sudan": [
+    15.55177,
+    32.53241
+  ],
+  "Stockholm, Sweden": [
+    59.33258,
+    18.0649
+  ],
+  "Göteborg, Sweden": [
+    57.70716,
+    11.96679
+  ],
+  "Singapore, Singapore": [
+    1.28967,
+    103.85007
+  ],
+  "Freetown, Sierra Leone": [
+    8.484,
+    -13.22994
+  ],
+  "Touba, Senegal": [
+    14.85,
+    -15.88333
+  ],
+  "Pikine, Senegal": [
+    14.76457,
+    -17.39071
+  ],
+  "Grand Dakar, Senegal": [
+    14.71331,
+    -17.45472
+  ],
+  "Dakar, Senegal": [
+    14.6937,
+    -17.44406
+  ],
+  "Mogadishu, Somalia": [
+    2.03711,
+    45.34375
+  ],
+  "San Salvador, El Salvador": [
+    13.68935,
+    -89.18718
+  ],
+  "Homs, Syria": [
+    34.72682,
+    36.72339
+  ],
+  "Aleppo, Syria": [
+    36.20124,
+    37.16117
+  ],
+  "Damascus, Syria": [
+    33.5102,
+    36.29128
+  ],
+  "N'Djamena, Chad": [
+    12.10672,
+    15.0444
+  ],
+  "Lomé, Togo": [
+    6.13748,
+    1.21227
+  ],
+  "Bangkok, Thailand": [
+    13.75398,
+    100.50144
+  ],
+  "Dushanbe, Tajikistan": [
+    38.53575,
+    68.77905
+  ],
+  "Ashgabat, Turkmenistan": [
+    37.95,
+    58.38333
+  ],
+  "Tunis, Tunisia": [
+    36.81897,
+    10.16579
+  ],
+  "Mercin, Turkey": [
+    36.79526,
+    34.61792
+  ],
+  "Konya, Turkey": [
+    37.87135,
+    32.48464
+  ],
+  "Kayseri, Turkey": [
+    38.73222,
+    35.48528
+  ],
+  "İzmir, Turkey": [
+    38.41273,
+    27.13838
+  ],
+  "Gaziantep, Turkey": [
+    37.05944,
+    37.3825
+  ],
+  "Eskişehir, Turkey": [
+    39.77667,
+    30.52056
+  ],
+  "Diyarbakır, Turkey": [
+    37.91583,
+    40.21889
+  ],
+  "Antalya, Turkey": [
+    36.90812,
+    30.69556
+  ],
+  "Ankara, Turkey": [
+    39.91987,
+    32.85427
+  ],
+  "Adana, Turkey": [
+    37.00167,
+    35.32889
+  ],
+  "Üsküdar, Turkey": [
+    41.02252,
+    29.02369
+  ],
+  "Umraniye, Turkey": [
+    41.01643,
+    29.12476
+  ],
+  "İstanbul, Turkey": [
+    41.01384,
+    28.94966
+  ],
+  "Esenler, Turkey": [
+    41.0435,
+    28.87619
+  ],
+  "Bursa, Turkey": [
+    40.19266,
+    29.08403
+  ],
+  "Bağcılar, Turkey": [
+    41.03903,
+    28.85671
+  ],
+  "Çankaya, Turkey": [
+    39.9179,
+    32.86268
+  ],
+  "Bahçelievler, Turkey": [
+    41.00231,
+    28.8598
+  ],
+  "Taipei, Taiwan": [
+    25.04776,
+    121.53185
+  ],
+  "Tainan, Taiwan": [
+    22.99083,
+    120.21333
+  ],
+  "Taichung, Taiwan": [
+    24.1469,
+    120.6839
+  ],
+  "Banqiao, Taiwan": [
+    25.01427,
+    121.46719
+  ],
+  "Kaohsiung, Taiwan": [
+    22.61626,
+    120.31333
+  ],
+  "Dar es Salaam, Tanzania": [
+    -6.82349,
+    39.26951
+  ],
+  "Zaporizhzhya, Ukraine": [
+    47.82289,
+    35.19031
+  ],
+  "Odessa, Ukraine": [
+    46.47747,
+    30.73262
+  ],
+  "Mykolayiv, Ukraine": [
+    46.96591,
+    31.9974
+  ],
+  "L'viv, Ukraine": [
+    49.83826,
+    24.02324
+  ],
+  "Kiev, Ukraine": [
+    50.45466,
+    30.5238
+  ],
+  "Kryvyy Rih, Ukraine": [
+    47.90966,
+    33.38044
+  ],
+  "Kharkiv, Ukraine": [
+    49.98081,
+    36.25272
+  ],
+  "Donets’k, Ukraine": [
+    48.023,
+    37.80224
+  ],
+  "Dnipropetrovsk, Ukraine": [
+    48.45,
+    34.98333
+  ],
+  "Kampala, Uganda": [
+    0.31628,
+    32.58219
+  ],
+  "Washington, D. C., USA": [
+    38.89511,
+    -77.03637
+  ],
+  "Jacksonville, USA": [
+    30.33218,
+    -81.65565
+  ],
+  "Indianapolis, USA": [
+    39.76838,
+    -86.15804
+  ],
+  "Baltimore, USA": [
+    39.29038,
+    -76.61219
+  ],
+  "Charlotte, USA": [
+    35.22709,
+    -80.84313
+  ],
+  "Columbus, USA": [
+    39.96118,
+    -82.99879
+  ],
+  "Oklahoma City, USA": [
+    35.46756,
+    -97.51643
+  ],
+  "Philadelphia, USA": [
+    39.95234,
+    -75.16379
+  ],
+  "Memphis, USA": [
+    35.14953,
+    -90.04898
+  ],
+  "Nashville, USA": [
+    36.16589,
+    -86.78444
+  ],
+  "New South Memphis, USA": [
+    35.08676,
+    -90.05676
+  ],
+  "Austin, USA": [
+    30.26715,
+    -97.74306
+  ],
+  "Dallas, USA": [
+    32.78306,
+    -96.80667
+  ],
+  "Fort Worth, USA": [
+    32.72541,
+    -97.32085
+  ],
+  "Houston, USA": [
+    29.76328,
+    -95.36327
+  ],
+  "San Antonio, USA": [
+    29.42412,
+    -98.49363
+  ],
+  "Chicago, USA": [
+    41.85003,
+    -87.65005
+  ],
+  "Boston, USA": [
+    42.35843,
+    -71.05977
+  ],
+  "Detroit, USA": [
+    42.33143,
+    -83.04575
+  ],
+  "New York City, USA": [
+    40.71427,
+    -74.00597
+  ],
+  "Milwaukee, USA": [
+    43.0389,
+    -87.90647
+  ],
+  "Phoenix, USA": [
+    33.44838,
+    -112.07404
+  ],
+  "Tucson, USA": [
+    32.22174,
+    -110.92648
+  ],
+  "Los Angeles, USA": [
+    34.05223,
+    -118.24368
+  ],
+  "San Diego, USA": [
+    32.71533,
+    -117.15726
+  ],
+  "San Francisco, USA": [
+    37.77493,
+    -122.41942
+  ],
+  "San Jose, USA": [
+    37.33939,
+    -121.89496
+  ],
+  "Denver, USA": [
+    39.73915,
+    -104.9847
+  ],
+  "Albuquerque, USA": [
+    35.08449,
+    -106.65114
+  ],
+  "Las Vegas, USA": [
+    36.17497,
+    -115.13722
+  ],
+  "El Paso, USA": [
+    31.75872,
+    -106.48693
+  ],
+  "Portland, USA": [
+    45.52345,
+    -122.67621
+  ],
+  "Seattle, USA": [
+    47.60621,
+    -122.33207
+  ],
+  "Nashville, USA": [
+    36.17137,
+    -86.78429
+  ],
+  "Montevideo, Uruguay": [
+    -34.90328,
+    -56.18816
+  ],
+  "Tashkent, Uzbekistan": [
+    41.26465,
+    69.21627
+  ],
+  "Valencia, Venezuela": [
+    10.16202,
+    -68.00765
+  ],
+  "Maracay, Venezuela": [
+    10.24694,
+    -67.59583
+  ],
+  "Maracaibo, Venezuela": [
+    10.63167,
+    -71.64056
+  ],
+  "Ciudad Guayana, Venezuela": [
+    8.35122,
+    -62.64102
+  ],
+  "Caracas, Venezuela": [
+    10.48801,
+    -66.87919
+  ],
+  "Barquisimeto, Venezuela": [
+    10.07389,
+    -69.32278
+  ],
+  "Ho Chi Minh City, Viet Nam": [
+    10.82302,
+    106.62965
+  ],
+  "Hanoi, Viet Nam": [
+    21.0245,
+    105.84117
+  ],
+  "Haiphong, Viet Nam": [
+    20.86481,
+    106.68345
+  ],
+  "Da Nang, Viet Nam": [
+    16.06778,
+    108.22083
+  ],
+  "Pristina, XK": [
+    42.67272,
+    21.16688
+  ],
+  "Ta‘izz, Yemen": [
+    13.57952,
+    44.02091
+  ],
+  "Sanaa, Yemen": [
+    15.35472,
+    44.20667
+  ],
+  "Al Ḩudaydah, Yemen": [
+    14.79781,
+    42.95452
+  ],
+  "Aden, Yemen": [
+    12.77944,
+    45.03667
+  ],
+  "Tembisa, South Africa": [
+    -25.99636,
+    28.2268
+  ],
+  "Soweto, South Africa": [
+    -26.26781,
+    27.85849
+  ],
+  "Pretoria, South Africa": [
+    -25.74486,
+    28.18783
+  ],
+  "Port Elizabeth, South Africa": [
+    -33.91799,
+    25.57007
+  ],
+  "Pietermaritzburg, South Africa": [
+    -29.61678,
+    30.39278
+  ],
+  "Johannesburg, South Africa": [
+    -26.20227,
+    28.04363
+  ],
+  "Durban, South Africa": [
+    -29.8579,
+    31.0292
+  ],
+  "Benoni, South Africa": [
+    -26.18848,
+    28.32078
+  ],
+  "Cape Town, South Africa": [
+    -33.92584,
+    18.42322
+  ],
+  "Lusaka, Zambia": [
+    -15.40669,
+    28.28713
+  ],
+  "Harare, Zimbabwe": [
+    -17.82772,
+    31.05337
+  ],
+  "Bulawayo, Zimbabwe": [
+    -20.15,
+    28.58333
+  ]
+}

@@ -2,6 +2,7 @@
 // const isString = (a) => typeof a === 'string';
 const isArray = (a) => Object.prototype.toString.call(a) === '[object Array]';
 
+const foo = 2;
 const div = function(a, b, c) {
   if (c) {
     if (isArray(c)) {
@@ -14,6 +15,8 @@ const div = function(a, b, c) {
   }
   return `<div class="${a}">${b}</div>`;
 };
+
+foo = 3;
 
 const drawDay = function(d) {
   return div('h4 w4 min-w4 ba', [
