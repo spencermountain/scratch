@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <head>
   <style>
-  h2{
-    color:slategrey;
-    margin-top:3rem;
-    margin-left:55px;
-    margin-bottom:-10px;
+  .header {
+    color:#66a8cc;
+    border-bottom:2px solid rgba(102, 168, 204,0.4);
+    display:inline;
+    text-align:left;
+    font-size:28px;
+    margin-left:5rem;
+  }
+  .break{
+    margin:3rem;
+    margin-left:5rem;
+  }
+  svg{
+    margin-left:5rem;
+    display:block;
   }
   </style>
 </head>
-<body style="width:100vw; height:100vh">
-  <h2>Temperature</h2>
-  <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
-  <h2>Average 401 delay</h2>
-  <svg id="traffic" width="800" height="300" style="overflow: visible;"></svg>
+<body style="width:100vw; height:100vh; position:relative;">
+  <p class="break">
+    <div class="header">Temperature</div>
+    <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
+  </p>
+  <p class="break">
+    <div class="header">Highway 401 Delays</div>
+    <svg id="traffic" width="800" height="300" style="overflow: visible;"></svg>
+  </p>
 
 
 <svg width="960" height="500"></svg>
@@ -24,7 +38,7 @@
 <script src="./graph.js"></script>
 <script src="./annotations.js"></script>
 <script defer>
-  const red='#a4191f'
+  const red='#cc668a'
     const tempNotes = [
       {
       note: {
@@ -48,8 +62,8 @@
         label: 'Jan 18'
       },
       color: red,
-      x: '2017-02-12',
-      y: -38,
+      x: '2017-01-17',
+      y: -40,
       dx: 20,
       dy: -80,
       subject: {
@@ -65,10 +79,10 @@
     {
     note: {
       title: 'Trailer pileup',
-      label: 'Jan 12'
+      label: 'Jan 20'
     },
     color: red,
-    x: '2017-02-16',
+    x: '2017-01-20',
     y: 0.14,
     dx: 0,
     dy: -20,
@@ -84,12 +98,12 @@
       label: 'Dec 23rd-29'
     },
     color: red,
-    x: '2018-01-09',
+    x: '2017-12-18',
     y: -0.15,
     dx: -46,
     dy: -80,
     subject: {
-      width:35,
+      width:31,
       height:18,
     },
     type: d3.annotationCalloutRect
@@ -100,7 +114,7 @@
       label: 'June 22'
     },
     color: red,
-    x: '2017-08-28',
+    x: '2017-06-22',
     y: 0.28,
     dx: 5,
     dy: 25,
@@ -116,7 +130,7 @@
       label: 'March 12-16'
     },
     color: red,
-    x: '2017-04-08',
+    x: '2017-03-13',
     y: -0.11,
     dx: 36,
     dy: -60,

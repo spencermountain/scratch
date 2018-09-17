@@ -14,7 +14,7 @@ const minTemp = [
   -5,
 ];
 const temperature = function() {
-  const noise = 17;
+  const noise = 14;
   let arr = [];
   for(let i = 0; i < 365; i += 1) {
     let month = Math.floor(i / 31);
@@ -23,7 +23,7 @@ const temperature = function() {
     val = parseInt(val, 10);
     arr.push(val);
   }
-  arr[210] = 40;
+  arr[240] = 38;
   arr[15] = -35;
   return arr;
 };
@@ -48,8 +48,6 @@ const traffic = function() {
   arr[79] = -0.05;
   arr[79] = -0.1;
   //christmas
-  arr[348] = 0;
-  arr[339] = -0.05;
   arr[350] = -0.08;
   arr[352] = -0.12;
   arr[353] = -0.13;
@@ -59,8 +57,10 @@ const traffic = function() {
   arr[357] = -0.1;
   arr[358] = -0.13;
   arr[359] = -0.12;
+  arr[360] = -0.1;
+  arr[361] = -0.12;
   //yoghurt
-  arr[212] = 0.32;
+  arr[173] = 0.32;
   //snow pileup
   arr[18] = 0.20;
 

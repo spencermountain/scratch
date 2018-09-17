@@ -1,44 +1,38 @@
+var margin = {
+  top: 20,
+  right: 0,
+  bottom: 30,
+  left: 0
+};
+
 const addDays = function(data) {
   let d = spacetime([2017, 1, 1]);
   d.startOf('year');
+  d.minus(1, 'day');
   return data.map((val) => {
     d.add(1, 'day');
     return {
       date: d.d,
-      close: val
+      val: val
     };
   });
 };
 
-
 window.makeGraph = function(svg, data, max, min, notes, yFormat) {
-  var margin = {
-    top: 20,
-    right: 20,
-    bottom: 30,
-    left: 50
-  };
-  data = addDays(data);
   var width = +svg.attr('width') - margin.left - margin.right;
   var height = +svg.attr('height') - margin.top - margin.bottom;
   var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
+  //scale our data
+  data = addDays(data);
   var x = d3.scaleTime().rangeRound([0, width]);
   var y = d3.scaleLinear().rangeRound([0, height]);
-
-  var line = d3.line()
-    .x(function(d) {
-      return x(d.date);
-    })
-    .y(function(d) {
-      return y(d.close);
-    });
-
-  x.domain([new Date('2017-01-01'), new Date('2017-12-30')]);
+  x.domain([new Date('2017-01-02'), new Date('2017-12-31')]);
   y.domain([max, min]);
+
+  //draw x-axis
   let xAxis = d3.axisBottom(x);
   xAxis.tickFormat(d3.timeFormat('%b'));
-
   g.append('g')
     .attr('transform', 'translate(0,' + height + ')')
     .attr('fill', 'slategrey')
@@ -46,6 +40,7 @@ window.makeGraph = function(svg, data, max, min, notes, yFormat) {
     .select('.domain')
     .remove();
 
+  //draw y-axis
   let yAxis = d3.axisLeft(y);
   yAxis.ticks(6);
   if (yFormat) {
@@ -57,6 +52,8 @@ window.makeGraph = function(svg, data, max, min, notes, yFormat) {
     .select('.domain')
     .remove();
 
+  //draw line
+  var line = d3.line().x(d => x(d.date)).y(d => y(d.val));
   g.append('path')
     .datum(data)
     .attr('fill', 'none')
