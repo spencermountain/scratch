@@ -1,24 +1,4 @@
-var margin = {
-  top: 20,
-  right: 0,
-  bottom: 30,
-  left: 0
-};
-
-const addDays = function(data) {
-  let d = spacetime([2017, 1, 1]);
-  d.startOf('year');
-  d.minus(1, 'day');
-  return data.map((val) => {
-    d.add(1, 'day');
-    return {
-      date: d.d,
-      val: val
-    };
-  });
-};
-
-window.makeGraph = function(svg, data, max, min, notes, yFormat) {
+window.weatherGraph = function(svg, data, max, min, notes, yFormat) {
   var width = +svg.attr('width') - margin.left - margin.right;
   var height = +svg.attr('height') - margin.top - margin.bottom;
   var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
@@ -35,22 +15,25 @@ window.makeGraph = function(svg, data, max, min, notes, yFormat) {
   xAxis.tickFormat(d3.timeFormat('%b'));
   g.append('g')
     .attr('transform', 'translate(0,' + height + ')')
-    .attr('fill', 'slategrey')
+    .attr('color', '#4d4d4d')
+    .attr('font-family', '\'avenir next\', avenir, sans-serif')
     .call(xAxis)
     .select('.domain')
     .remove();
 
+
   //draw y-axis
   let yAxis = d3.axisLeft(y);
   yAxis.ticks(6);
-  if (yFormat) {
-    yAxis.tickFormat(d3.format(yFormat));
-  }
+  yAxis.tickFormat(d => d + '°');
   g.append('g')
     .call(yAxis)
-    .attr('fill', 'slategrey')
+    .attr('color', '#4d4d4d')
+    .attr('font-family', '\'avenir next\', avenir, sans-serif')
     .select('.domain')
     .remove();
+
+  svg.selectAll('.tick line').remove();
 
   //draw line
   var line = d3.line().x(d => x(d.date)).y(d => y(d.val));

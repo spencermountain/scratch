@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <head>
   <style>
+  body{
+    font-family: 'avenir next', avenir, sans-serif;
+  }
   .header {
-    color:#66a8cc;
-    border-bottom:2px solid rgba(102, 168, 204,0.4);
+    color:#6c7f9c;
+    border-bottom:2px solid rgba(108, 127, 156, 0.7);
     display:inline;
     text-align:left;
     font-size:28px;
@@ -12,18 +15,74 @@
   .break{
     margin:3rem;
     margin-left:5rem;
+    position:relative;
   }
   svg{
     margin-left:5rem;
     display:block;
   }
+  .flex{
+    display:inline-flex;
+    position:relative;
+    width:300px;
+    padding-left:10px;
+    border-radius:5px;
+    margin-left:10px;
+    min-height:5px;
+  }
+  .up{
+    position:absolute;
+    font-size:10px;
+    color:grey;
+    text-align:center;
+    left:15px;
+    top:-25px;
+  }
+  .weatheryear{
+    height:40px;
+  }
+  .past{
+    opacity:0.5;
+  }
+  .year{
+    color:grey;
+    font-size:17px;
+  }
   </style>
 </head>
 <body style="width:100vw; height:100vh; position:relative;">
   <p class="break">
-    <div class="header">Temperature</div>
+    <div class="header">Weather</div>
     <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
+
+    <span style="position:relative; top:30px; left:400px;">
+      <div class="weatheryear past"> <span class="year">2016:</span>
+        <span class="flex">
+          <div style="position:relative; flex:17; background:#b3c5e6"></div>
+          <div style="position:relative; flex:8; background:#b3d7e6"></div>
+          <div style="position:relative; flex:28; background:#e8e3e3"></div>
+          <div style="position:relative; flex:48; background:#e6c2b3"></div>
+        </span>
+      </div>
+      <div class="weatheryear past"> <span class="year">2017:</span>
+        <span class="flex">
+          <div style="position:relative; flex:20; background:#b3c5e6"></div>
+          <div style="position:relative; flex:4; background:#b3d7e6"></div>
+          <div style="position:relative; flex:22; background:#e8e3e3"></div>
+          <div style="position:relative; flex:54; background:#e6c2b3"></div>
+        </span>
+      </div>
+      <div class="weatheryear"> <span class="year">2018:</span>
+        <span class="flex">
+          <div style="position:relative; flex:18; background:#b3c5e6"><span class="up">Rain <br/><b>65</b></span></div>
+          <div style="position:relative; flex:6; background:#b3d7e6"><span class="up" style="left:-5px;">Snow<br/><b>21</b></span></div>
+          <div style="position:relative; flex:28; background:#e8e3e3"><span class="up" style="left:20px;">Clouds <br/><b>102</b></span></div>
+          <div style="position:relative; flex:48; background:#e6c2b3"><span class="up" style="left:30px;">Sunshine <br/><b>175</b></span></div>
+        </span>
+      </div>
+    </span>
   </p>
+
   <p class="break">
     <div class="header">Highway 401 Delays</div>
     <svg id="traffic" width="800" height="300" style="overflow: visible;"></svg>
@@ -34,115 +93,18 @@
 <script src="./lib/d3.js"></script>
 <script src="./lib/d3-annotation.js"></script>
 <script src="./lib/spacetime.js"></script>
-<script src="./yeardata.js"></script>
-<script src="./graph.js"></script>
-<script src="./annotations.js"></script>
+<script src="./lib.js"></script>
+<script src="./weather/graph.js"></script>
+<script src="./weather/data.js"></script>
+<script src="./weather/annotation.js"></script>
+<script src="./traffic/graph.js"></script>
+<script src="./traffic/data.js"></script>
+<script src="./traffic/annotation.js"></script>
 <script defer>
-  const red='#cc668a'
-    const tempNotes = [
-      {
-      note: {
-        title: 'Hottest Day',
-        label: 'Aug 28'
-      },
-      color: red,
-      x: '2017-08-28',
-      y: 32,
-      dx: 0,
-      dy: 50,
-      subject: {
-        radius: 10,
-        radiusPadding: 10
-      },
-      type: d3.annotationCalloutCircle
-    },
-      {
-      note: {
-        title: 'Coldest Day',
-        label: 'Jan 18'
-      },
-      color: red,
-      x: '2017-01-17',
-      y: -40,
-      dx: 20,
-      dy: -80,
-      subject: {
-        radius: 10,
-        radiusPadding: 10
-      },
-      type: d3.annotationCalloutCircle
-    },
-  ];
-  makeGraph(d3.select('#temperature'), yearData.temperature, 45, -45, tempNotes)
 
-  const trafficNotes = [
-    {
-    note: {
-      title: 'Trailer pileup',
-      label: 'Jan 20'
-    },
-    color: red,
-    x: '2017-01-20',
-    y: 0.14,
-    dx: 0,
-    dy: -20,
-    subject: {
-      radius: 10,
-      radiusPadding: 10
-    },
-    type: d3.annotationCalloutCircle
-  },
-    {
-    note: {
-      title: 'Christmas drop',
-      label: 'Dec 23rd-29'
-    },
-    color: red,
-    x: '2017-12-18',
-    y: -0.15,
-    dx: -46,
-    dy: -80,
-    subject: {
-      width:31,
-      height:18,
-    },
-    type: d3.annotationCalloutRect
-  },
-  {
-    note: {
-      title: 'Yoghurt Accident',
-      label: 'June 22'
-    },
-    color: red,
-    x: '2017-06-22',
-    y: 0.28,
-    dx: 5,
-    dy: 25,
-    subject: {
-      radius: 10,
-      radiusPadding: 10
-    },
-    type: d3.annotationCalloutCircle
-  },
-    {
-    note: {
-      title: 'March break',
-      label: 'March 12-16'
-    },
-    color: red,
-    x: '2017-03-13',
-    y: -0.11,
-    dx: 36,
-    dy: -60,
-    subject: {
-      width:22,
-      height:18,
-    },
-    type: d3.annotationCalloutRect
-  },
-]
+  window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
 
-console.log(yearData.traffic)
-  makeGraph(d3.select('#traffic'), yearData.traffic, 0.45, -0.20, trafficNotes,'.0%')
+
+  window.trafficGraph(d3.select('#traffic'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
 </script>
 </body>

@@ -19,3 +19,23 @@ window.addAnnotations = function(svg, x, y, notes) {
     .attr('class', 'annotation-group')
     .call(makeAnnotations);
 };
+
+var margin = {
+  top: 20,
+  right: 0,
+  bottom: 30,
+  left: 0
+};
+
+const addDays = function(data) {
+  let d = spacetime([2017, 1, 1]);
+  d.startOf('year');
+  d.minus(1, 'day');
+  return data.map((val) => {
+    d.add(1, 'day');
+    return {
+      date: d.d,
+      val: val
+    };
+  });
+};
