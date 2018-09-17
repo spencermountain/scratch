@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<body style="width:100vw; height:100vh">
+  <h2>Temperature</h2>
+  <svg id="temperature" width="800" height="300"></svg>
+
+
+<svg width="960" height="500"></svg>
+<script src="./lib/d3.js"></script>
+<script src="./lib/d3-annotation.js"></script>
+<script src="./lib/spacetime.js"></script>
+<script src="./yeardata.js"></script>
+<script src="./graph.js"></script>
+<script defer>
+  var svg = d3.select('svg');
+  makeGraph(svg, yearData, 45, -45,[])
+</script>
+</body>

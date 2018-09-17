@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="../lib/spencer.min.css"/>
+    <style>
+    </style>
+  </head>
+  <body>
+    hi
+    <script src="../lib/somehow.js"></script>
+    <script defer>
+    let world = somehow()
+    // world.addLine([{x:'2018/03/03',y:30},{x:'June 6 2018',y:40}])
+
+    world.addRect({
+      x:50,
+      width:50,
+      y:3,
+      height:5,
+    },{ fill:'red'})
+    // world.addXAxis()
+    // world.addYAxis()
+
+    world.x.fit(0,100)
+    world.y.fit(0,10)
+    // console.log(world.x.max)
+    // world.fit()
+    let svg = world.build()
+    document.body.innerHTML = svg
+    </script>
+  </body>
+</html>

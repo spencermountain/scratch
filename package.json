@@ -1,7 +1,7 @@
 {
   "name": "scratch",
   "version": "0.0.1",
-  "description": "not even trying",
+  "description": "first toil, then grave",
   "main": "./",
   "scripts": {
     "start": "browser-sync start --server --files './'",
