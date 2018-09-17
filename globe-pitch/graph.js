@@ -1,25 +1,30 @@
+const addDays = function(data) {
+  let d = spacetime([2017, 1, 1]);
+  d.startOf('year');
+  return data.map((val) => {
+    d.add(1, 'day');
+    return {
+      date: d.d,
+      close: val
+    };
+  });
+};
 
-window.makeGraph = function(svg, data, max, min, annotations) {
+
+window.makeGraph = function(svg, data, max, min, notes, yFormat) {
   var margin = {
     top: 20,
     right: 20,
     bottom: 30,
     left: 50
   };
+  data = addDays(data);
   var width = +svg.attr('width') - margin.left - margin.right;
   var height = +svg.attr('height') - margin.top - margin.bottom;
   var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-  data = yearData.map(o => {
-    o.date = new Date(o.date);
-    return o;
-  });
-
-  var x = d3.scaleTime()
-    .rangeRound([0, width]);
-
-  var y = d3.scaleLinear()
-    .rangeRound([height, 0]);
+  var x = d3.scaleTime().rangeRound([0, width]);
+  var y = d3.scaleLinear().rangeRound([0, height]);
 
   var line = d3.line()
     .x(function(d) {
@@ -36,19 +41,21 @@ window.makeGraph = function(svg, data, max, min, annotations) {
 
   g.append('g')
     .attr('transform', 'translate(0,' + height + ')')
-    .call(xAxis);
-
-  g.append('g')
-    .call(d3.axisLeft(y))
+    .attr('fill', 'slategrey')
+    .call(xAxis)
     .select('.domain')
-    .remove()
-    .append('text')
-    .attr('fill', '#000')
-    .attr('transform', 'rotate(-90)')
-    .attr('y', 6)
-    .attr('dy', '0.71em')
-    .attr('text-anchor', 'end')
-    .text('Price ($)');
+    .remove();
+
+  let yAxis = d3.axisLeft(y);
+  yAxis.ticks(6);
+  if (yFormat) {
+    yAxis.tickFormat(d3.format(yFormat));
+  }
+  g.append('g')
+    .call(yAxis)
+    .attr('fill', 'slategrey')
+    .select('.domain')
+    .remove();
 
   g.append('path')
     .datum(data)
@@ -56,41 +63,8 @@ window.makeGraph = function(svg, data, max, min, annotations) {
     .attr('stroke', 'lightsteelblue')
     .attr('stroke-linejoin', 'round')
     .attr('stroke-linecap', 'round')
-    .attr('stroke-width', 1.5)
+    .attr('stroke-width', 1.8)
     .attr('d', line);
 
-
-  const notes = [{
-    note: {
-      title: 'My birthday',
-      label: 'March 28th'
-    },
-    color: '#ef4837',
-    x: x(new Date('2017-03-28')),
-    y: y(10),
-    dx: -5,
-    dy: -50,
-    subject: {
-      radius: 20,
-      radiusPadding: 10
-    },
-    type: d3.annotationCalloutCircle
-  }];
-
-  // d3.annotation().annotations(annotations)
-
-
-  const makeAnnotations = d3.annotation()
-    .notePadding(15)
-    .type(d3.annotationLabel)
-    .accessorsInverse({
-      date: d => formatTime(x.invert(d.x)),
-      close: d => y.invert(d.y)
-    })
-    .annotations(notes);
-
-  svg.append('g')
-    .attr('class', 'annotation-group')
-    .call(makeAnnotations);
-
+  addAnnotations(svg, x, y, notes);
 };

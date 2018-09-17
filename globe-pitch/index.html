@@ -1,7 +1,19 @@
 <!DOCTYPE html>
+<head>
+  <style>
+  h2{
+    color:slategrey;
+    margin-top:3rem;
+    margin-left:55px;
+    margin-bottom:-10px;
+  }
+  </style>
+</head>
 <body style="width:100vw; height:100vh">
   <h2>Temperature</h2>
-  <svg id="temperature" width="800" height="300"></svg>
+  <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
+  <h2>Average 401 delay</h2>
+  <svg id="traffic" width="800" height="300" style="overflow: visible;"></svg>
 
 
 <svg width="960" height="500"></svg>
@@ -10,8 +22,113 @@
 <script src="./lib/spacetime.js"></script>
 <script src="./yeardata.js"></script>
 <script src="./graph.js"></script>
+<script src="./annotations.js"></script>
 <script defer>
-  var svg = d3.select('svg');
-  makeGraph(svg, yearData, 45, -45,[])
+  const red='#a4191f'
+    const tempNotes = [
+      {
+      note: {
+        title: 'Hottest Day',
+        label: 'Aug 28'
+      },
+      color: red,
+      x: '2017-08-28',
+      y: 32,
+      dx: 0,
+      dy: 50,
+      subject: {
+        radius: 10,
+        radiusPadding: 10
+      },
+      type: d3.annotationCalloutCircle
+    },
+      {
+      note: {
+        title: 'Coldest Day',
+        label: 'Jan 18'
+      },
+      color: red,
+      x: '2017-02-12',
+      y: -38,
+      dx: 20,
+      dy: -80,
+      subject: {
+        radius: 10,
+        radiusPadding: 10
+      },
+      type: d3.annotationCalloutCircle
+    },
+  ];
+  makeGraph(d3.select('#temperature'), yearData.temperature, 45, -45, tempNotes)
+
+  const trafficNotes = [
+    {
+    note: {
+      title: 'Trailer pileup',
+      label: 'Jan 12'
+    },
+    color: red,
+    x: '2017-02-16',
+    y: 0.14,
+    dx: 0,
+    dy: -20,
+    subject: {
+      radius: 10,
+      radiusPadding: 10
+    },
+    type: d3.annotationCalloutCircle
+  },
+    {
+    note: {
+      title: 'Christmas drop',
+      label: 'Dec 23rd-29'
+    },
+    color: red,
+    x: '2018-01-09',
+    y: -0.15,
+    dx: -46,
+    dy: -80,
+    subject: {
+      width:35,
+      height:18,
+    },
+    type: d3.annotationCalloutRect
+  },
+  {
+    note: {
+      title: 'Yoghurt Accident',
+      label: 'June 22'
+    },
+    color: red,
+    x: '2017-08-28',
+    y: 0.28,
+    dx: 5,
+    dy: 25,
+    subject: {
+      radius: 10,
+      radiusPadding: 10
+    },
+    type: d3.annotationCalloutCircle
+  },
+    {
+    note: {
+      title: 'March break',
+      label: 'March 12-16'
+    },
+    color: red,
+    x: '2017-04-08',
+    y: -0.11,
+    dx: 36,
+    dy: -60,
+    subject: {
+      width:22,
+      height:18,
+    },
+    type: d3.annotationCalloutRect
+  },
+]
+
+console.log(yearData.traffic)
+  makeGraph(d3.select('#traffic'), yearData.traffic, 0.45, -0.20, trafficNotes,'.0%')
 </script>
 </body>
