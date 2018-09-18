@@ -43,7 +43,7 @@ const rainData = function() {
   for(let i = 0; i < 365; i += 1) {
     let val = 0;
     if (Math.random() > 0.75) {
-      val = Math.random() * 20;
+      val = Math.random() * 50;
     }
     arr.push(val);
   }

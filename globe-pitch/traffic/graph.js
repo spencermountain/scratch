@@ -12,15 +12,15 @@ window.trafficGraph = function(svg, data, max, min, notes, yFormat) {
   y.domain([max, min]);
 
   //draw x-axis
-  let xAxis = d3.axisBottom(x);
-  xAxis.tickFormat(d3.timeFormat('%b'));
-  g.append('g')
-    .attr('transform', 'translate(0,' + height + ')')
-    .attr('color', '#4d4d4d')
-    .attr('font-family', '\'avenir next\', avenir, sans-serif')
-    .call(xAxis)
-    .select('.domain')
-    .remove();
+  // let xAxis = d3.axisBottom(x);
+  // xAxis.tickFormat(d3.timeFormat('%b'));
+  // g.append('g')
+  //   .attr('transform', 'translate(0,' + height + ')')
+  //   .attr('color', '#4d4d4d')
+  //   .attr('font-family', '\'avenir next\', avenir, sans-serif')
+  //   .call(xAxis)
+  //   .select('.domain')
+  //   .remove();
 
   //draw y-axis
   let yAxis = d3.axisLeft(y);
@@ -30,7 +30,7 @@ window.trafficGraph = function(svg, data, max, min, notes, yFormat) {
   }
   g.append('g')
     .call(yAxis)
-    .attr('color', '#4d4d4d')
+    .attr('color', '#e6b3c1')
     .attr('font-family', '\'avenir next\', avenir, sans-serif')
     .select('.domain')
     .remove();
@@ -50,18 +50,4 @@ window.trafficGraph = function(svg, data, max, min, notes, yFormat) {
 
   addAnnotations(svg, x, y, notes);
 
-  //add bottom precipitation bars
-  let days = rainData();
-  days = addDays(days);
-  svg.selectAll('.bar')
-    .data(days)
-    .enter().append('rect')
-    .attr('class', 'bar')
-    .attr('fill', '#b3c5e6')
-    .attr('x', function(d, i) {
-      return x(d.date);
-    })
-    .attr('y', (d) => 30 - d.val + 240)
-    .attr('width', 5)
-    .attr('height', (d) => d.val);
 };

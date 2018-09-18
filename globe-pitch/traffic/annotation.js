@@ -1,4 +1,3 @@
-
 const trafficNotes = [
   {
     note: {
@@ -7,7 +6,7 @@ const trafficNotes = [
     },
     color: red,
     x: '2017-01-20',
-    y: 0.14,
+    y: 0.20,
     dx: 0,
     dy: -20,
     subject: {
@@ -23,7 +22,7 @@ const trafficNotes = [
     },
     color: red,
     x: '2017-12-18',
-    y: -0.15,
+    y: -0.1,
     dx: -46,
     dy: -80,
     subject: {
@@ -39,7 +38,7 @@ const trafficNotes = [
     },
     color: red,
     x: '2017-06-22',
-    y: 0.28,
+    y: 0.31,
     dx: 5,
     dy: 25,
     subject: {
@@ -55,7 +54,7 @@ const trafficNotes = [
     },
     color: red,
     x: '2017-03-13',
-    y: -0.11,
+    y: -0.07,
     dx: 36,
     dy: -60,
     subject: {

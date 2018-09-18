@@ -4,13 +4,32 @@
   body{
     font-family: 'avenir next', avenir, sans-serif;
   }
+  .annotation-note-title, text.title {
+    font-size: 13px;
+  }
+  .annotation-note-label, text.title {
+    font-size: 11px;
+  }
   .header {
     color:#6c7f9c;
-    border-bottom:2px solid rgba(108, 127, 156, 0.7);
+    /* border-bottom:2px solid rgba(108, 127, 156, 0.7); */
     display:inline;
     text-align:left;
-    font-size:28px;
+    font-size:24px;
     margin-left:5rem;
+  }
+  .hred {
+    color:#9c896c;
+    text-decoration:underline;
+    /* border-bottom:2px solid rgba(108, 127, 156, 0.7); */
+    display:block;
+    text-align:left;
+    font-size:20px;
+    margin-left:8rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
   }
   .break{
     margin:3rem;
@@ -49,6 +68,9 @@
     color:grey;
     font-size:17px;
   }
+  path{
+    shape-rendering: geometricPrecision;
+  }
   </style>
 </head>
 <body style="width:100vw; height:100vh; position:relative;">
@@ -80,13 +102,22 @@
         </span>
       </div>
     </span>
+
     <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
+    <!-- <svg id="daylight" width="800" height="100" style="overflow: visible;"></svg> -->
 
   </p>
 
   <p class="break">
-    <div class="header" style="color:#6699cc">Highway 401 Delays</div>
-    <svg id="traffic" width="800" height="300" style="overflow: visible;"></svg>
+    <div class="header" style="color:#6699cc">Traffic</div>
+    <!-- <div class="h2" style="color:#6699cc">Average highway delays</div> -->
+    <div class="hred" >Highway 401</div>
+    <p></p>
+    <svg id="traffic401" width="800" height="150" style="overflow: visible;"></svg>
+    <div class="hred" >DVP</div>
+    <svg id="trafficDVP" width="800" height="150" style="overflow: visible;"></svg>
+    <div style="position:relative; top:40px; left:400px; color:#b3c5e6; font-size:12px;">- precipitation -</div>
+    <svg id="rainGraph" width="800" height="100" style="overflow: visible;"></svg>
   </p>
 
 
@@ -96,16 +127,20 @@
 <script src="./lib/spacetime.js"></script>
 <script src="./lib.js"></script>
 <script src="./weather/graph.js"></script>
+<script src="./weather/sunlight-graph.js"></script>
 <script src="./weather/data.js"></script>
 <script src="./weather/annotation.js"></script>
 <script src="./traffic/graph.js"></script>
+<script src="./traffic/rain-graph.js"></script>
 <script src="./traffic/data.js"></script>
 <script src="./traffic/annotation.js"></script>
 <script defer>
 
   window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
+  // window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1230, -100, tempNotes)
 
-
-  window.trafficGraph(d3.select('#traffic'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
+  window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
+  window.trafficGraph(d3.select('#trafficDVP'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
+  window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, trafficNotes,'.0%')
 </script>
 </body>
