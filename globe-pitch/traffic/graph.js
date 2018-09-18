@@ -42,11 +42,26 @@ window.trafficGraph = function(svg, data, max, min, notes, yFormat) {
   g.append('path')
     .datum(data)
     .attr('fill', 'none')
-    .attr('stroke', 'lightsteelblue')
+    .attr('stroke', '#e6b3c1')
     .attr('stroke-linejoin', 'round')
     .attr('stroke-linecap', 'round')
     .attr('stroke-width', 1.8)
     .attr('d', line);
 
   addAnnotations(svg, x, y, notes);
+
+  //add bottom precipitation bars
+  let days = rainData();
+  days = addDays(days);
+  svg.selectAll('.bar')
+    .data(days)
+    .enter().append('rect')
+    .attr('class', 'bar')
+    .attr('fill', '#b3c5e6')
+    .attr('x', function(d, i) {
+      return x(d.date);
+    })
+    .attr('y', (d) => 30 - d.val + 240)
+    .attr('width', 5)
+    .attr('height', (d) => d.val);
 };

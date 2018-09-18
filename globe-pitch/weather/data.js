@@ -15,6 +15,7 @@ const minTemp = [
   0,
   -5,
 ];
+
 const temperatureData = function() {
   const noise = 14;
   let arr = [];
@@ -27,5 +28,21 @@ const temperatureData = function() {
   }
   arr[240] = 38;
   arr[15] = -35;
+  return arr;
+};
+
+const weatherData = function() {
+  const colors = [
+    '#b3c5e6',
+    '#b3d7e6',
+    '#e8e3e3',
+    '#e6c2b3',
+  ];
+  let arr = [];
+  for(let i = 0; i < 365; i += 1) {
+    let val = Math.random() * 4;
+    val = Math.floor(val);
+    arr.push(colors[val]);
+  }
   return arr;
 };

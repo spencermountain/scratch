@@ -37,12 +37,13 @@ const trafficData = function() {
 
   return arr;
 };
+
 const rainData = function() {
   let arr = [];
   for(let i = 0; i < 365; i += 1) {
     let val = 0;
     if (Math.random() > 0.75) {
-      val = Math.random() * 33;
+      val = Math.random() * 20;
     }
     arr.push(val);
   }
