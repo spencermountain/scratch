@@ -1,10 +1,11 @@
-window.rainGraph = function(svg, data, max, min, notes, yFormat) {
+window.sportsGraph = function(svg, data, max, min, notes) {
+  data = jaysData();
   var width = +svg.attr('width') - margin.left - margin.right;
   var height = +svg.attr('height') - margin.top - margin.bottom;
   var g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   //scale our data
-  data = addDays(data);
+  // data = addDays(data);
   var x = d3.scaleTime().rangeRound([0, width]);
   var y = d3.scaleLinear().rangeRound([0, height]);
   x.domain([new Date('2017-01-02'), new Date('2017-12-31')]);
@@ -26,7 +27,7 @@ window.rainGraph = function(svg, data, max, min, notes, yFormat) {
   //draw y-axis
   let yAxis = d3.axisLeft(y);
   yAxis.ticks(4);
-  yAxis.tickFormat(d => d + 'mm');
+  yAxis.tickFormat(d3.format('~s'));
   g.append('g')
     .call(yAxis)
     .attr('color', '#b3c5e6')
@@ -36,25 +37,37 @@ window.rainGraph = function(svg, data, max, min, notes, yFormat) {
 
   svg.selectAll('.tick line').remove();
 
-  //add bottom precipitation bars
-  let days = rainData();
-  days = addDays(days);
+  svg.selectAll('.leafs')
+    .data(leafsData())
+    .enter().append('rect')
+    .attr('class', 'leafs')
+    .attr('opacity', 0.8)
+    .attr('fill', '#335799')
+    .attr('x', d => x(d.date))
+    .attr('y', d => y(d.val) + 3)
+    .attr('width', 3)
+    .attr('height', d => 300 - y(d.val));
+
+  svg.selectAll('.raptors')
+    .data(raptorsData())
+    .enter().append('rect')
+    .attr('class', 'raptors')
+    .attr('opacity', 0.8)
+    .attr('fill', '#cc668a')
+    .attr('x', d => x(d.date))
+    .attr('y', d => y(d.val) + 4)
+    .attr('width', 3)
+    .attr('height', d => 300 - y(d.val));
+
+  //add jays bars
   svg.selectAll('.bar')
-    .data(days)
+    .data(data)
     .enter().append('rect')
     .attr('class', 'bar')
-    .attr('fill', (d, i) => {
-      if (i < 40 || i > 320) {
-        return '#aebcc1'; //snow
-      }
-      return '#76adc1'; //rain
-    })
-    .attr('x', function(d) {
-      return x(d.date);
-    })
-    .attr('y', (d) => 100 - d.val)
-    .attr('width', 5)
-    .attr('height', (d) => d.val);
-
+    .attr('fill', '#66a8cc')
+    .attr('x', d => x(d.date))
+    .attr('y', d => y(d.val))
+    .attr('width', 3)
+    .attr('height', d => 300 - y(d.val));
   addAnnotations(svg, x, y, notes);
 };

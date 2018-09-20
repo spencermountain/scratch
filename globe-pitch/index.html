@@ -12,24 +12,11 @@
   }
   .header {
     color:#6c7f9c;
-    /* border-bottom:2px solid rgba(108, 127, 156, 0.7); */
+    border-bottom:2px solid rgba(108, 127, 156, 0.7);
     display:inline;
     text-align:left;
     font-size:24px;
     margin-left:5rem;
-  }
-  .hred {
-    color:#9c896c;
-    text-decoration:underline;
-    /* border-bottom:2px solid rgba(108, 127, 156, 0.7); */
-    display:block;
-    text-align:left;
-    font-size:20px;
-    margin-left:8rem;
-    margin-top:1rem;
-    margin-bottom:1rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
   }
   .break{
     margin:3rem;
@@ -68,6 +55,14 @@
     color:grey;
     font-size:17px;
   }
+  .highway{
+    position:relative;
+    margin-top:2rem;
+    color:#9c896c;
+    text-decoration:underline;
+    left:4rem;
+    font-size:16px;
+  }
   path{
     shape-rendering: geometricPrecision;
   }
@@ -105,20 +100,29 @@
 
     <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
     <!-- <svg id="daylight" width="800" height="100" style="overflow: visible;"></svg> -->
-
   </p>
 
+
+  <!-- Traffic graphs -->
   <p class="break">
-    <div class="header" style="color:#6699cc">Traffic</div>
+    <div class="header" style="color:#6699cc; ">Traffic</div>
     <!-- <div class="h2" style="color:#6699cc">Average highway delays</div> -->
-    <div class="hred" >Highway 401</div>
+    <div class="highway" >Hwy 401:</div>
+    <svg id="traffic401" width="800" height="150" style="overflow: visible; margin-top:40px;"></svg>
     <p></p>
-    <svg id="traffic401" width="800" height="150" style="overflow: visible;"></svg>
-    <div class="hred" >DVP</div>
+    <div class="highway" >DVP:</div>
     <svg id="trafficDVP" width="800" height="150" style="overflow: visible;"></svg>
     <div style="position:relative; top:40px; left:400px; color:#b3c5e6; font-size:12px;">- precipitation -</div>
     <svg id="rainGraph" width="800" height="100" style="overflow: visible;"></svg>
   </p>
+
+  <!-- Sports graphs -->
+  <p class="break">
+    <div class="header" style="color:#6699cc; ">Sports</div>
+    <div class="highway" >Home-game Attendance:</div>
+    <svg id="sportsGraph" width="800" height="300" style="overflow: visible;"></svg>
+  </p>
+
 
 
 <svg width="960" height="500"></svg>
@@ -126,21 +130,29 @@
 <script src="./lib/d3-annotation.js"></script>
 <script src="./lib/spacetime.js"></script>
 <script src="./lib.js"></script>
+
 <script src="./weather/graph.js"></script>
 <script src="./weather/sunlight-graph.js"></script>
 <script src="./weather/data.js"></script>
 <script src="./weather/annotation.js"></script>
+
 <script src="./traffic/graph.js"></script>
 <script src="./traffic/rain-graph.js"></script>
 <script src="./traffic/data.js"></script>
 <script src="./traffic/annotation.js"></script>
+
+<script src="./sports/graph.js"></script>
+<script src="./sports/data.js"></script>
+<script src="./sports/annotations.js"></script>
 <script defer>
 
   window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
   // window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1230, -100, tempNotes)
 
-  window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
-  window.trafficGraph(d3.select('#trafficDVP'), trafficData(), 0.45, -0.20, trafficNotes,'.0%')
-  window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, trafficNotes,'.0%')
+  window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.35, -0.20, hwy401Notes,'.0%')
+  window.trafficGraph(d3.select('#trafficDVP'), trafficData2(), 0.35, -0.20, DVPNotes,'.0%')
+  window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, rainNotes,'.0%')
+
+  window.sportsGraph(d3.select('#sportsGraph'), [], 67000, 0, sportsNotes,'')
 </script>
 </body>

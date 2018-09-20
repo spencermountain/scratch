@@ -34,7 +34,29 @@ const trafficData = function() {
   arr[173] = 0.32;
   //snow pileup
   arr[18] = 0.20;
+  //flooding
+  arr[240] = 0.22;
+  arr[241] = 0.2;
+  return arr;
+};
 
+const trafficData2 = function() {
+  const noise = 0.12;
+  let arr = [];
+  for(let i = 0; i < 365; i += 1) {
+    let val = Math.random() * noise;
+    val = val - 0.03;
+    // val = parseInt(val, 10);
+    arr.push(val);
+  }
+  //construction
+  arr[100] = 0.2;
+  arr[101] = 0.2;
+  arr[102] = 0.2;
+  arr[103] = 0.2;
+  //flooding
+  arr[240] = 0.22;
+  arr[241] = 0.2;
   return arr;
 };
 
@@ -43,9 +65,11 @@ const rainData = function() {
   for(let i = 0; i < 365; i += 1) {
     let val = 0;
     if (Math.random() > 0.75) {
-      val = Math.random() * 50;
+      val = Math.random() * 35;
     }
     arr.push(val);
   }
+  arr[240] = 60;
+  arr[241] = 90;
   return arr;
 };

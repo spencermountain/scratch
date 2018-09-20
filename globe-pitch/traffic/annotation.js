@@ -1,4 +1,4 @@
-const trafficNotes = [
+const hwy401Notes = [
   {
     note: {
       title: 'Trailer pileup',
@@ -62,5 +62,58 @@ const trafficNotes = [
       height: 18,
     },
     type: d3.annotationCalloutRect
+  },
+];
+const DVPNotes = [
+  {
+    note: {
+      title: 'Construction',
+      label: 'April 20-23'
+    },
+    color: red,
+    x: '2017-04-13',
+    y: 0.2,
+    dx: 0,
+    dy: -30,
+    subject: {
+      radius: 10,
+      radiusPadding: 10
+    },
+    type: d3.annotationCalloutCircle
+  },
+  {
+    note: {
+      title: 'Flooding',
+      label: 'Aug 28'
+    },
+    color: red,
+    x: '2017-08-28',
+    y: 0.2,
+    dx: 0,
+    dy: -30,
+    subject: {
+      radius: 10,
+      radiusPadding: 10
+    },
+    type: d3.annotationCalloutCircle
+  },
+];
+
+const rainNotes = [
+  {
+    note: {
+      title: 'Flash Flood',
+      label: 'Aug 28'
+    },
+    color: 'steelblue',
+    x: '2017-08-30',
+    y: 0.4,
+    dx: -20,
+    dy: -1,
+    subject: {
+      radius: 10,
+      radiusPadding: 10
+    },
+    type: d3.annotationCalloutCircle
   },
 ];

@@ -24,10 +24,11 @@ window.trafficGraph = function(svg, data, max, min, notes, yFormat) {
 
   //draw y-axis
   let yAxis = d3.axisLeft(y);
-  yAxis.ticks(6);
+  yAxis.ticks(3);
   if (yFormat) {
     yAxis.tickFormat(d3.format('+.0%'));
   }
+  // yAxis.ticks([-0.1, 0, 0.1]);
   g.append('g')
     .call(yAxis)
     .attr('color', '#e6b3c1')
