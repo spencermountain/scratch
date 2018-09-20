@@ -8,7 +8,7 @@ const jaysData = function() {
   for(let i = 0; i < 365; i += 1) {
     d.add(1, 'day');
     let val = 0;
-    if (Math.random() > 0.75) {
+    if (Math.random() > 0.5) {
       val = Math.random() * (skydome * 0.6);
       val += skydome * 0.2;
       val = parseInt(val, 10);
@@ -23,7 +23,7 @@ const jaysData = function() {
     });
   }
   arr = arr.map((a, i) => {
-    if (a.team === 'jays' && i > 284 || i < 87) {
+    if (i > 284 || i < 87) {
       a.val = 0;
     }
     return a;
@@ -92,5 +92,35 @@ const raptorsData = function() {
   arr[276].val = acc;
   arr[97].val = acc;
   arr[98].val = acc;
+  return arr;
+};
+const tfcData = function() {
+  const bmo = 30000;
+  let d = spacetime([2017, 1, 1]);
+  d.startOf('year');
+  d.minus(1, 'day');
+  let arr = [];
+  for(let i = 0; i < 365; i += 1) {
+    d.add(1, 'day');
+    let val = 0;
+    if (Math.random() > 0.85) {
+      val = Math.random() * (bmo * 0.5);
+      val += bmo * 0.1;
+      val = parseInt(val, 10);
+    }
+    arr.push({
+      date: d.d,
+      val: val,
+    });
+  }
+  arr = arr.map((a, i) => {
+    if (i > 284 || i < 87) { //march to october
+      a.val = 0;
+    }
+    return a;
+  });
+  arr[276].val = bmo;
+  arr[97].val = bmo;
+  arr[98].val = bmo;
   return arr;
 };

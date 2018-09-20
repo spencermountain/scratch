@@ -13,7 +13,7 @@ const tempNotes = [
     dy: 50,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -29,7 +29,7 @@ const tempNotes = [
     dy: -80,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },

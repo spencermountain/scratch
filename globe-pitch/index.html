@@ -71,7 +71,10 @@
 <body style="width:100vw; height:100vh; position:relative;">
   <p class="break">
     <div class="header">Weather</div>
-    <span style="position:absolute; top:168px; left:400px;">
+    <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
+
+    <div class="highway" style="left:780px; top:20px;">Conditions:</div>
+    <span style="position:relative; top:48px; left:400px;">
       <div class="weatheryear past"> <span class="year">2016:</span>
         <span class="flex">
           <div style="position:relative; flex:17; background:#b3c5e6"></div>
@@ -97,9 +100,11 @@
         </span>
       </div>
     </span>
-
-    <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
-    <!-- <svg id="daylight" width="800" height="100" style="overflow: visible;"></svg> -->
+    <p>
+        <div style="position:relative; top:40px; left:400px; color:grey; font-size:12px; margin-bottom:50px; min-height:40px;">&nbsp; </div>
+        <div class="highway" style="left:780px; top:5px;">Day Length:</div>
+        <svg id="daylight" width="800" height="100" style="overflow: visible; margin-top:40px;"></svg>
+      </p>
   </p>
 
 
@@ -114,6 +119,7 @@
     <svg id="trafficDVP" width="800" height="150" style="overflow: visible;"></svg>
     <div style="position:relative; top:40px; left:400px; color:#b3c5e6; font-size:12px;">- precipitation -</div>
     <svg id="rainGraph" width="800" height="100" style="overflow: visible;"></svg>
+
   </p>
 
   <!-- Sports graphs -->
@@ -132,7 +138,6 @@
 <script src="./lib.js"></script>
 
 <script src="./weather/graph.js"></script>
-<script src="./weather/sunlight-graph.js"></script>
 <script src="./weather/data.js"></script>
 <script src="./weather/annotation.js"></script>
 
@@ -140,19 +145,21 @@
 <script src="./traffic/rain-graph.js"></script>
 <script src="./traffic/data.js"></script>
 <script src="./traffic/annotation.js"></script>
+<script src="./traffic/sunlight-graph.js"></script>
 
 <script src="./sports/graph.js"></script>
 <script src="./sports/data.js"></script>
 <script src="./sports/annotations.js"></script>
 <script defer>
-
+window.onload = function() {
   window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
-  // window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1230, -100, tempNotes)
 
   window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.35, -0.20, hwy401Notes,'.0%')
   window.trafficGraph(d3.select('#trafficDVP'), trafficData2(), 0.35, -0.20, DVPNotes,'.0%')
   window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, rainNotes,'.0%')
+  window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1530, -100, daylightNotes)
 
   window.sportsGraph(d3.select('#sportsGraph'), [], 67000, 0, sportsNotes,'')
+}
 </script>
 </body>

@@ -11,7 +11,7 @@ const hwy401Notes = [
     dy: -20,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -43,7 +43,7 @@ const hwy401Notes = [
     dy: 25,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -77,7 +77,7 @@ const DVPNotes = [
     dy: -30,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -93,7 +93,7 @@ const DVPNotes = [
     dy: -30,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -112,8 +112,74 @@ const rainNotes = [
     dy: -1,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
+  },
+];
+const daylightNotes = [
+  {
+    note: {
+      title: 'DST+',
+      label: 'Mar 12',
+    },
+    color: 'grey',
+    x: '2017-03-12',
+    y: 600,
+    dx: -20,
+    dy: -5,
+    subject: {
+      radius: 10,
+      radiusPadding: 0
+    },
+    type: d3.annotationCalloutCircle
+  },
+  {
+    note: {
+      title: 'DST-',
+      label: 'Nov 5'
+    },
+    color: 'grey',
+    x: '2017-11-05',
+    y: 600,
+    dx: -20,
+    dy: -5,
+    subject: {
+      radius: 10,
+      radiusPadding: 0
+    },
+    type: d3.annotationCalloutCircle
+  },
+  {
+    note: {
+      title: '15hrs, 26m',
+      label: 'June 24'
+    },
+    color: 'grey',
+    x: '2017-06-24',
+    y: 900,
+    dx: -1,
+    dy: -1,
+    subject: {
+      width: 2,
+      height: 56,
+    },
+    type: d3.annotationCalloutRect
+  },
+  {
+    note: {
+      title: '8hrs 56m',
+      label: 'Dec 21'
+    },
+    color: 'grey',
+    x: '2017-12-21',
+    y: 500,
+    dx: -1,
+    dy: -1,
+    subject: {
+      width: 1,
+      height: 32,
+    },
+    type: d3.annotationCalloutRect
   },
 ];

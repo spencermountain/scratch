@@ -11,7 +11,7 @@ const sportsNotes = [
     dy: -1,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -27,7 +27,7 @@ const sportsNotes = [
     dy: -30,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -43,7 +43,7 @@ const sportsNotes = [
     dy: -60,
     subject: {
       radius: 10,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },
@@ -59,7 +59,7 @@ const sportsNotes = [
     dy: -30,
     subject: {
       radius: 20,
-      radiusPadding: 10
+      radiusPadding: 5
     },
     type: d3.annotationCalloutCircle
   },

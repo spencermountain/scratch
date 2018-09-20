@@ -59,6 +59,16 @@ window.sportsGraph = function(svg, data, max, min, notes) {
     .attr('width', 3)
     .attr('height', d => 300 - y(d.val));
 
+  // svg.selectAll('.tfc')
+    //   .data(tfcData())
+    //   .enter().append('rect')
+    //   .attr('class', 'tfc')
+    //   .attr('fill', 'indianred') //
+    //   .attr('x', d => x(d.date))
+    //   .attr('y', d => y(d.val) + 4)
+    //   .attr('width', 3)
+    //   .attr('height', d => 300 - y(d.val));
+
   //add jays bars
   svg.selectAll('.bar')
     .data(data)

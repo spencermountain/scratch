@@ -48,18 +48,5 @@ window.weatherGraph = function(svg, data, max, min, notes, yFormat) {
 
   addAnnotations(svg, x, y, notes);
 
-  //add bottom weather bars
-  let days = weatherData();
-  days = addDays(days);
-  svg.selectAll('.bar')
-    .data(days)
-    .enter().append('rect')
-    .attr('class', 'bar')
-    .attr('fill', (d) => d.val)
-    .attr('x', function(d) {
-      return x(d.date);
-    })
-    .attr('y', 285)
-    .attr('width', 5)
-    .attr('height', 5);
+
 };
