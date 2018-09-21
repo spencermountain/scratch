@@ -57,8 +57,7 @@
   }
   .highway{
     color:#9c896c;
-    text-decoration:underline;
-    font-size:16px;
+    font-size:18px;
   }
   path{
     shape-rendering: geometricPrecision;
@@ -75,7 +74,7 @@
     <div class="header">Weather</div>
     <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
 
-    <div class="highway nudge" style="">Conditions:</div>
+    <div class="highway nudge" style="text-align:right; margin-bottom:0px;">Conditions:</div>
     <span style="position:relative; top:48px; left:400px;">
       <div class="weatheryear past"> <span class="year">2016:</span>
         <span class="flex">
@@ -113,10 +112,10 @@
   <!-- Traffic graphs -->
   <p class="break">
     <div class="header" style="color:#6699cc; ">Traffic</div>
-    <div class="highway nudge" >Hwy 401:</div>
+    <div class="highway nudge" >Hwy 401</div>
     <svg id="traffic401" width="800" height="150" style="overflow: visible; margin-top:40px;"></svg>
     <p></p>
-    <div class="highway nudge" >DVP:</div>
+    <div class="highway nudge" >DVP</div>
     <svg id="trafficDVP" width="800" height="150" style="overflow: visible;"></svg>
     <div style="position:relative; top:40px; left:400px; color:#b3c5e6; font-size:12px;">- precipitation -</div>
     <svg id="rainGraph" width="800" height="100" style="overflow: visible;"></svg>
@@ -126,14 +125,26 @@
   <!-- Sports graphs -->
   <p class="break">
     <div class="header" style="color:#6699cc; ">Sports</div>
-    <div class="highway nudge" style="" >Home-game Attendance:</div>
+    <div class="highway nudge" style="margin-bottom:5px;" >Home-game Attendance:</div>
     <svg id="sportsGraph" width="800" height="300" style="overflow: visible;"></svg>
-    <div class="highway nudge" style="">Performance:</div>
 
-    <div style="position:relative; left:75px; color:#b3c5e6; font-size:16px;">Games +/- 50%</div>
+    <div class="highway nudge" style="margin-top:5rem; margin-bottom:15px;">Performance:</div>
+    <div style="position:relative; left:275px; color:steelblue; font-size:16px;">- Games +/- 50% -</div>
     <svg id="performanceGraph" width="800" height="300" style="overflow: visible;"></svg>
   </p>
 
+    <!-- Politics graphs -->
+    <p class="break">
+      <div class="header" style="color:#6699cc; ">Politics</div>
+      <div class="highway nudge" style="margin-bottom:5px;" >Bills passed:</div>
+      <div class="weatheryear" style="margin-left:250px;">
+        <span class="flex">
+          <div style="position:relative; flex:35; background:cornflowerblue"><span class="up">Toronto Council <br/><b>3,565</b></span></div>
+          <div style="position:relative; flex:3; background:steelblue"><span class="up" style="left:-25px; width:80px;">Queens Park<br/><b>306</b></span></div>
+        </span>
+      </div>
+      <svg id="billsGraph" width="800" height="200" style="overflow: visible;"></svg>
+    </p>
 
 
 <svg width="960" height="500"></svg>
@@ -157,6 +168,10 @@
 <script src="./sports/annotations.js"></script>
 <script src="./sports/graph.js"></script>
 <script src="./sports/performance.js"></script>
+
+<script src="./politics/graph.js"></script>
+<script src="./politics/data.js"></script>
+<script src="./politics/billNotes.js"></script>
 <script defer>
 window.onload = function() {
   setTimeout(()=>{
@@ -169,6 +184,8 @@ window.onload = function() {
 
     window.sportsGraph(d3.select('#sportsGraph'), [], 67000, 0, sportsNotes,'')
     window.performanceGraph(d3.select('#performanceGraph'), [], 60, -60, perfNotes)
+
+    window.billsGraph(d3.select('#billsGraph'), [], 40, 0, billNotes)
   },500)
 }
 </script>
