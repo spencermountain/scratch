@@ -39,3 +39,11 @@ const addDays = function(data) {
     };
   });
 };
+
+const zero = [{
+  date: new Date('2017-01-01:08:00'),
+  val: 0
+}, {
+  date: new Date('2017-12-30:08:00'),
+  val: 0
+}];

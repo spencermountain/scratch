@@ -56,24 +56,26 @@
     font-size:17px;
   }
   .highway{
-    position:relative;
-    margin-top:2rem;
     color:#9c896c;
     text-decoration:underline;
-    left:4rem;
     font-size:16px;
   }
   path{
     shape-rendering: geometricPrecision;
   }
+  .nudge{
+    margin-top:3rem;
+    margin-left:8rem;
+    margin-bottom:3rem;
+  }
   </style>
 </head>
-<body style="width:100vw; height:100vh; position:relative;">
+<body style="width:100vw; height:100vh; position:relative; max-width:800px;">
   <p class="break">
     <div class="header">Weather</div>
     <svg id="temperature" width="800" height="300" style="overflow: visible;"></svg>
 
-    <div class="highway" style="left:780px; top:20px;">Conditions:</div>
+    <div class="highway nudge" style="">Conditions:</div>
     <span style="position:relative; top:48px; left:400px;">
       <div class="weatheryear past"> <span class="year">2016:</span>
         <span class="flex">
@@ -102,7 +104,7 @@
     </span>
     <p>
         <div style="position:relative; top:40px; left:400px; color:grey; font-size:12px; margin-bottom:50px; min-height:40px;">&nbsp; </div>
-        <div class="highway" style="left:780px; top:5px;">Day Length:</div>
+        <div class="highway" style="text-align:right; top:5px;">Day Length:</div>
         <svg id="daylight" width="800" height="100" style="overflow: visible; margin-top:40px;"></svg>
       </p>
   </p>
@@ -111,11 +113,10 @@
   <!-- Traffic graphs -->
   <p class="break">
     <div class="header" style="color:#6699cc; ">Traffic</div>
-    <!-- <div class="h2" style="color:#6699cc">Average highway delays</div> -->
-    <div class="highway" >Hwy 401:</div>
+    <div class="highway nudge" >Hwy 401:</div>
     <svg id="traffic401" width="800" height="150" style="overflow: visible; margin-top:40px;"></svg>
     <p></p>
-    <div class="highway" >DVP:</div>
+    <div class="highway nudge" >DVP:</div>
     <svg id="trafficDVP" width="800" height="150" style="overflow: visible;"></svg>
     <div style="position:relative; top:40px; left:400px; color:#b3c5e6; font-size:12px;">- precipitation -</div>
     <svg id="rainGraph" width="800" height="100" style="overflow: visible;"></svg>
@@ -125,8 +126,12 @@
   <!-- Sports graphs -->
   <p class="break">
     <div class="header" style="color:#6699cc; ">Sports</div>
-    <div class="highway" >Home-game Attendance:</div>
+    <div class="highway nudge" style="" >Home-game Attendance:</div>
     <svg id="sportsGraph" width="800" height="300" style="overflow: visible;"></svg>
+    <div class="highway nudge" style="">Performance:</div>
+
+    <div style="position:relative; left:75px; color:#b3c5e6; font-size:16px;">Games +/- 50%</div>
+    <svg id="performanceGraph" width="800" height="300" style="overflow: visible;"></svg>
   </p>
 
 
@@ -147,19 +152,24 @@
 <script src="./traffic/annotation.js"></script>
 <script src="./traffic/sunlight-graph.js"></script>
 
-<script src="./sports/graph.js"></script>
 <script src="./sports/data.js"></script>
+<script src="./sports/perfData.js"></script>
 <script src="./sports/annotations.js"></script>
+<script src="./sports/graph.js"></script>
+<script src="./sports/performance.js"></script>
 <script defer>
 window.onload = function() {
-  window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
+  setTimeout(()=>{
+    window.weatherGraph(d3.select('#temperature'), temperatureData(), 45, -45, tempNotes)
 
-  window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.35, -0.20, hwy401Notes,'.0%')
-  window.trafficGraph(d3.select('#trafficDVP'), trafficData2(), 0.35, -0.20, DVPNotes,'.0%')
-  window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, rainNotes,'.0%')
-  window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1530, -100, daylightNotes)
+    window.trafficGraph(d3.select('#traffic401'), trafficData(), 0.35, -0.20, hwy401Notes,'.0%')
+    window.trafficGraph(d3.select('#trafficDVP'), trafficData2(), 0.35, -0.20, DVPNotes,'.0%')
+    window.rainGraph(d3.select('#rainGraph'), rainData(), 0.45, 0, rainNotes,'.0%')
+    window.sunlightGraph(d3.select('#daylight'), dayLengthData, 1530, -100, daylightNotes)
 
-  window.sportsGraph(d3.select('#sportsGraph'), [], 67000, 0, sportsNotes,'')
+    window.sportsGraph(d3.select('#sportsGraph'), [], 67000, 0, sportsNotes,'')
+    window.performanceGraph(d3.select('#performanceGraph'), [], 60, -60, perfNotes)
+  },500)
 }
 </script>
 </body>
