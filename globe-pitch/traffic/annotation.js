@@ -40,7 +40,7 @@ const hwy401Notes = [
     x: '2017-06-22',
     y: 0.31,
     dx: 5,
-    dy: 25,
+    dy: -15,
     subject: {
       radius: 10,
       radiusPadding: 5

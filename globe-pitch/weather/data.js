@@ -9,11 +9,11 @@ const minTemp = [
   20,
   22,
   24,
-  22,
-  20,
-  10,
+  18,
+  8,
   0,
-  -5,
+  -12,
+  -20,
 ];
 
 const temperatureData = function() {
