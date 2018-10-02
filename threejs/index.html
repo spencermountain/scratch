@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - materials</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				color: #fff;
+				font-family: Monospace;
+				font-size: 13px;
+				text-align: center;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="container"></div>
+
+		<script src="./lib/three.js"></script>
+		<script src="./lib/OrbitControls.js"></script>
+		<script src="./lib/stats.js"></script>
+
+		<script>
+			var container, stats;
+			var camera, scene, renderer, controls;
+			var particleLight;
+			var loader = new THREE.FontLoader();
+			init( );
+			animate();
+			function init(  ) {
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+				camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.set( 0.0, 120, 300 );
+				scene = new THREE.Scene();
+				// house
+				var cubeWidth = 4;
+				var numberOfSphersPerSide = 1;
+				var sphereRadius = 10
+				var stepSize = 1
+				var geometry = new THREE.SphereBufferGeometry( sphereRadius, 32, 16 );
+				var diffuseColor = new THREE.Color().setHSL( 1, 0.5, 1 * 0.5 + 0.1 );
+				var material = new THREE.MeshLambertMaterial( {
+					color: diffuseColor,
+					reflectivity: 1,
+				} );
+				var house = new THREE.Mesh( geometry, material );
+				house.position.x =  10;
+				house.position.y =  10;
+				house.position.z =  20;
+				house.receiveShadow = true;
+				house.castShadow = true;
+				scene.add( house );
+				// floor
+				var floorGeometry = new THREE.PlaneBufferGeometry( 200, 200 );
+				var floorMaterial = new THREE.MeshLambertMaterial( { color: 0x4676b6 } );
+				var floor = new THREE.Mesh( floorGeometry, floorMaterial );
+				floor.rotation.x = Math.PI * - 0.5;
+				floor.receiveShadow = true;
+				scene.add( floor );
+				// Lights
+				particleLight = new THREE.Mesh( new THREE.SphereBufferGeometry( 14, 18, 18 ), new THREE.MeshBasicMaterial( { color: 0xf2a53f } ) );
+				scene.add( particleLight );
+				scene.add( new THREE.AmbientLight( 0x222222 ) );
+				var directionalLight = new THREE.DirectionalLight( 0xffffff, 1 );
+				directionalLight.position.set( 1, 1, 1 ).normalize();
+				scene.add( directionalLight );
+				var pointLight = new THREE.PointLight( 0xffffff, 2, 800 );
+				particleLight.add( pointLight );
+				//render it
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+				stats = new Stats();
+				container.appendChild( stats.dom );
+				controls = new THREE.OrbitControls( camera );
+			}
+
+			function animate() {
+				requestAnimationFrame( animate );
+				render();
+				stats.update();
+			}
+			function render() {
+				var timer = Date.now() * 0.00025;
+				// camera.position.x = Math.cos( timer ) * 800;
+				// camera.position.z = Math.sin( timer ) * 800;
+				camera.lookAt( scene.position );
+				particleLight.position.x = Math.sin( timer * 7 ) * 300;
+				particleLight.position.y = Math.cos( timer * 5 ) * 400;
+				particleLight.position.z = Math.cos( timer * 3 ) * 300;
+				renderer.render( scene, camera );
+			}
+		</script>
+
+	</body>
+</html>
