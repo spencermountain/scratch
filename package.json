@@ -20,6 +20,7 @@
   "dependencies": {
     "browser-sync": "^2.23.6",
     "spacetime": "^4.4.0",
-    "spacetime-daylight": "^1.0.0"
+    "spacetime-daylight": "^1.0.0",
+    "three": "^0.98.0"
   }
 }
