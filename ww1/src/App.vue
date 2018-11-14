@@ -22,6 +22,7 @@ export default {
       scene: null,
       renderer: null,
       mesh: null,
+      mesh2: null,
       stats: null
     }
   },
@@ -30,17 +31,21 @@ export default {
       // zoom, aspect, near, far
       this.camera = new THREE.PerspectiveCamera(45, container.clientWidth/container.clientHeight, 0.01, 1000);
       // this.camera.position.x = 100;
-      this.camera.position.z = 130;
+      this.camera.position.z = 100;
       this.camera.position.y = -65;
 
       this.camera.rotation.x = 0.5;
     },
     makeLights(){
-      // this.scene.add( new THREE.AmbientLight( 0xffffff ) );
-			var light = new THREE.PointLight( 0xffffff, 1 );
-      light.position.set(100,50,100)
-			this.camera.add( light );
-      this.scene.add( light );
+      this.scene.add( new THREE.AmbientLight( 0xffffff , 0.2) );
+			// var light = new THREE.PointLight( 0xffffff, 0.6 );
+      // light.position.set(20, -10, 30)
+      // light.castShadow = true;
+      // this.scene.add( light );
+			var light2 = new THREE.PointLight( 0xaaaaaa, 0.9 );
+      light2.position.set(30, -30, 60)
+      light2.castShadow = true;
+      this.scene.add( light2 );
     },
     addHelpers(){
       var gridHelper = new THREE.GridHelper( 20, 20, 0xff00ff, 0x80ffff );
@@ -55,14 +60,22 @@ export default {
       this.scene.add( axesHelper );
     },
     makeBox(){
-      let geometry = new THREE.BoxGeometry(12, 12, 12);
-      // let material = new THREE.MeshNormalMaterial( {color:0x4682B4} );
-      // let material = new THREE.MeshLambertMaterial({color:0x4682B4}  );
+      let geometry = new THREE.BoxGeometry(12, 12, 8);
       let material = new THREE.MeshPhongMaterial({color:0x4682B4}  );
       this.mesh = new THREE.Mesh(geometry, material);
-      this.mesh.position.z=7
+      this.mesh.position.z=20
       this.mesh.castShadow=true
       this.scene.add(this.mesh);
+    },
+    makeBox2(){
+      let geometry = new THREE.BoxGeometry(12, 12, 8);
+      let material = new THREE.MeshPhongMaterial({color:0xff82B4}  );
+      this.mesh2 = new THREE.Mesh(geometry, material);
+      this.mesh2.position.z=20
+      this.mesh2.position.x=20
+      this.mesh2.position.y=-20
+      this.mesh2.castShadow=true
+      this.scene.add(this.mesh2);
     },
     makeSlab(){
       //width, height, depth
@@ -82,6 +95,7 @@ export default {
       this.makeLights()
       // this.addHelpers()
       this.makeBox()
+      this.makeBox2()
       this.makeSlab()
 
       this.stats = new Stats();
@@ -96,6 +110,8 @@ export default {
       requestAnimationFrame(this.animate);
       this.mesh.rotation.x += 0.01;
       this.mesh.rotation.y += 0.02;
+      this.mesh2.rotation.x += 0.01;
+      this.mesh2.rotation.y += 0.02;
       // let diff=2
       // if(Math.random()>0.5){
       //   diff*=-1
