@@ -5,7 +5,8 @@
   "main": "./",
   "scripts": {
     "start": "browser-sync start --server --files './'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "new": "node ./scripts/new.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,10 @@
   },
   "homepage": "https://github.com/spencermountain/scratch#readme",
   "dependencies": {
-    "browser-sync": "^2.23.6",
-    "spacetime": "^4.4.0",
+    "browser-sync": "2.26.7",
+    "shelljs": "^0.8.3",
+    "spacetime": "6.1.0",
     "spacetime-daylight": "^1.0.0",
-    "three": "^0.98.0"
+    "three": "0.109.0"
   }
 }
