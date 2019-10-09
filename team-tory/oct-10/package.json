@@ -20,7 +20,7 @@
     "printWidth": 100
   },
   "dependencies": {
-    "somehow": "0.3.1",
+    "somehow": "0.3.2",
     "spencer-color": "0.1.0"
   },
   "devDependencies": {
