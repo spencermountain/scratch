@@ -1817,6 +1817,7 @@ var moveUp = {
   'Gary Crawford': true,
   'Mike Layton': true,
   'Michael Thompson': true,
+  'Anthony Perruzza': true,
   'Jaye Robinson': true,
   'Jim Karygiannis': true,
   'Kristyn Wong-Tam': true
