@@ -26,7 +26,7 @@ const bump = {
   'Frances Nunziata': 1,
   'Gary Crawford': 2,
   'Brad Bradford': -3,
-  'Paul Ainslie': -2,
+  'Paul Ainslie': -1,
   'Cynthia Lai': -2,
   'Jim Karygiannis': 2,
   'Paula Fletcher': -2,
@@ -34,13 +34,16 @@ const bump = {
   'Anthony Perruzza': -2,
   'Denzil Minnan-Wong': -2,
   'Mike Layton': 2,
+  'Josh Matlow': 1,
   'Kristyn Wong-Tam': 1,
+  'Gord Perks': -1,
+  'John Filion': -1,
   'Jaye Robinson': -2
 }
 
 const moveUp = {
   'Gary Crawford': true,
-  // 'Paul Ainslie': true
+  'Mike Layton': true,
   'Michael Thompson': true,
   'Jaye Robinson': true,
   'Jim Karygiannis': true,
@@ -74,7 +77,6 @@ data.council.forEach((person, p) => {
   })
 
   line.set(votes)
-  // line.set([[1, 20], [2, Math.random() * 100], [3, 22]])
   line.color(person.color)
   let y = -3
   if (bump[person.name] !== undefined) {
