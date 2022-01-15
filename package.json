@@ -20,7 +20,7 @@
   "homepage": "https://github.com/spencermountain/scratch#readme",
   "dependencies": {
     "browser-sync": "2.26.7",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "spacetime": "6.1.0",
     "spacetime-daylight": "^1.0.0",
     "three": "0.109.0"
